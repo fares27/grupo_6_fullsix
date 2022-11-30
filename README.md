@@ -28,14 +28,13 @@ manualidades y las computadoras. Siempre me gustó aprender, estudiar y entender
 para poder algún día trabajar de lo que me guste.
 
 
-Sol Bakken
-Mi nombre es Sol Bakken. Linkeadora tiempo completo. De base estudié Comunicación Publicitaria e Institucional. 
-Me gusta decir que trabajé de todos los lados del mostrador; eventos, relaciones públicas, ventas, marketing, 
-trade marketing todo esto en el sector privado y también en comunicación y relaciones públicas en el sector público. 
-Fui y vine de la independencia a la dependencia más de una vez, hasta tuve un bar. Desde hace 3 años me dedico a 
-asesorar a PyMEs, mini PyMEs y emprendedores a vender online y a optimizar sus ecosistemas de ventas digitales con 
-mucho foco en ecommerce y marketplaces. Todo eso después de haberme formado en UX, Data Analytics, Growth Marketing, 
-performance eCommerce y Neurociencias entre muchas otras cosas que sigo aprendiendo día a día. 
+Sol Bakken:
+Linkeadora tiempo completo. Estudié Comunicación Publicitaria e Institucional. Me gusta decir que trabajé de todos lados
+del mostrador; eventos, ventas, marketing, trade marketing en el sector privado y también en comunicación y relaciones públicas
+en el sector público. Fui y vine de la independencia a la dependencia más de una vez, hasta tuve un bar. Desde hace 3 años me dedico 
+a asesorar a PyMEs y emprendedores a vender online; a optimizar sus ecosistemas de ventas digitales con mucho foco en ecommerce y 
+marketplaces. Soy user con mirada uxer. Me formé en UX, Data Analytics, Growth Marketing, performance eCommerce y Neurociencias 
+entre otras que sigo aprendiendo día a día. 
 
 
 *¿Qué productos o servicios brindará nuestro sitio?* 
