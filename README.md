@@ -28,23 +28,54 @@ manualidades y las computadoras. Siempre me gustó aprender, estudiar y entender
 para poder algún día trabajar de lo que me guste.
 
 
-Sol
+Sol Bakken
+Mi nombre es Sol Bakken. Linkeadora tiempo completo. De base estudié Comunicación Publicitaria e Institucional. 
+Me gusta decir que trabajé de todos los lados del mostrador; eventos, relaciones públicas, ventas, marketing, 
+trade marketing todo esto en el sector privado y también en comunicación y relaciones públicas en el sector público. 
+Fui y vine de la independencia a la dependencia más de una vez, hasta tuve un bar. Desde hace 3 años me dedico a 
+asesorar a PyMEs, mini PyMEs y emprendedores a vender online y a optimizar sus ecosistemas de ventas digitales con 
+mucho foco en ecommerce y marketplaces. Todo eso después de haberme formado en UX, Data Analytics, Growth Marketing, 
+performance eCommerce y Neurociencias entre muchas otras cosas que sigo aprendiendo día a día. 
 
 
+*¿Qué productos o servicios brindará nuestro sitio?* 
+Nuestro sitio ofrecerá servicios de psicología deportiva y mejora del rendimiento. El usuario podrá elegir el servicio 
+de consulta entre dos modalidades: presencial o virtual. Además, podrá seleccionar el servicio que se adapte mejor a 
+sus necesidades; si requiere una consulta con un profesional del tipo "One to One" o si requiere consultas grupales 
+pensadas para fomentar la cohesión de los deportes de equipo. Por otro lado, también se ofrecerán workshops o talleres 
+con modalidad presencial o virtual con el objetio de formar a Directores Técnicos, Jefes de Equipos, Arbitros y Coaches 
+Deportivos.
 
-¿Qué productos o servicios brindará nuestro sitio? 
+*¿Quién será nuestra audiencia objetivo?* 
+Deportistas Amateurs y/profesionales, Equipos deportivos amateurs y/o profesionales, entrenadores, coaches, jefes de 
+equipo, familiares de deportistas y arbitros.
+
+*¿Cómo ajustaremos nuestra oferta a ese público?* 
+Ajustaremos la oferta de nuestro servicio teniendo en cuenta dos modalidades de consulta y 3 tipos de servicios. 
+Primero el usuario tendrá que optar por el servicio y luego por la modalidad. 
+
+1) Consultas psicológicas 1-1 (virtual o presencial). 
+Objetivos: 
+A) Evaluación de factores que afectan el rendimiento. 
+B) Optimización del rendimiento deportivo. 
+C) Acompañamiento psicológico durante la lesión deportiva. 
+
+2) Consultas psicológicas grupales (virtual o presencial). 
+Objetivo: 
+Fomentar la cohesión en los deportes de equipo.
+
+3) Workshops trimestrales.
+Objetivo:
+Motivación/Clima de Entrenamiento/Recuperación de Lesiones/Alto Rendimiento, etc.
 
 
-¿Quién será nuestra audiencia objetivo? 
-Nuestros planes estarán destinados a: deportistas, arbitros, familiares de deportistas y entrenadores de equipos.
-
-¿Cómo ajustaremos nuestra oferta a ese público?
+LINK de Figma con Wireframes: https://www.figma.com/file/CFLUkHjXMmSyognVL5kCs1/Home?node-id=0%3A1&t=8UpjpE9keak1rbRb-0 
 
 
-Sitios Similares:
+Sitios Similares: 
 
-https://www.psicologosdeldeporteonline.com/
-https://assessport.com/psicologia-deportiva/
-https://www.tuterapia.com.ar/
-https://sanamenteonline.com/Beneficios_pac
-https://lagasca.es/psicologos/deportivo/
+https://www.psicologosdeldeporteonline.com/ 
+https://assessport.com/psicologia-deportiva/ 
+https://www.tuterapia.com.ar/ 
+https://sanamenteonline.com/Beneficios_pac 
+https://lagasca.es/psicologos/deportivo/ 
