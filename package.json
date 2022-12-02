@@ -1,0 +1,24 @@
+{
+  "name": "proyecto-integrador---dh",
+  "version": "1.0.0",
+  "description": "Equipo Número 6: FullSix",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fares27/grupo_6_fullsix.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fares27/grupo_6_fullsix/issues"
+  },
+  "homepage": "https://github.com/fares27/grupo_6_fullsix#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
