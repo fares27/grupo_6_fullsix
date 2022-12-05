@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+
+.nav{
+display: flex;
+background-color: #C5DAC1;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.menus{
+    display: none;
+}
+
+.menu{
+    display: none;
+    justify-content: space-between;
+}
+
+.register-menu{
+    display: none;
+}
+
+.burger-menu{
+    padding-left: 10px;
+}
+
+.fa-bars {
+    font-size: 2em;
+    padding: 1px;
+    border-radius: 20%;
+}
+
+.logo {
+   
+}
+
+a{
+    text-decoration: none;
+    color: black; 
+}
+
+
+li {
+    padding: 10px;
+}
+
+
+/*  Escritorio */
+@media(min-width: 768px){
+    .menu{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .register-menu{
+        display: flex;
+    }
+    .burger-menu {
+        display:none;
+    }
+
+    .nav {
+        justify-content: space-around;
+    }
+}

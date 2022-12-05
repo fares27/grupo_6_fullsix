@@ -15,5 +15,5 @@ console.log ("Servidor corriendo en el puerto 3000")
 
 // Vista a ejecutar en el Home
 app.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './views/.html'))
+    res.sendFile(path.resolve(__dirname, './views/index.html'))
 })
