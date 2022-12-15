@@ -9,6 +9,9 @@ display: flex;
 background-color: #C5DAC1;
 padding-top: 10px;
 padding-bottom: 10px;
+justify-content: space-between;
+text-align: center;
+
 }
 
 .menus{
@@ -23,9 +26,16 @@ padding-bottom: 10px;
 .register-menu{
     display: none;
 }
+.register-menu li a{
+    background-color: white;
+    border-radius: 7px;
+    padding: 10px;
+}
 
-.burger-menu{
-    padding-left: 10px;
+.burger-menu {
+    text-align: center;
+    padding: 10px;
+    margin-right: 10px;
 }
 
 .fa-bars {
@@ -35,7 +45,9 @@ padding-bottom: 10px;
 }
 
 .logo {
-   
+   height: 45px;
+   width: 45px;
+   margin-left: 10px;
 }
 
 a{
@@ -48,7 +60,23 @@ li {
     padding: 10px;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
 
+footer{
+    background-color: #C5DAC1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-footer{
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+    align-self: center;
+}
 /*  Escritorio */
 @media(min-width: 768px){
     .menu{
