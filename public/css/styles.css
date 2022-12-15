@@ -73,9 +73,31 @@ footer{
 
 .logo-footer{
     margin-top: 20px;
+    margin-bottom: 20px;
     height: 100px;
     width: 100px;
     align-self: center;
+}
+
+.contenedor-logos-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: auto;
+}
+
+.contenedor-logos-footer a img{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.links-footer{
+    text-align: center;
+    font-weight: bold;
+    padding:  15px;
+    font-size: 12px;
 }
 /*  Escritorio */
 @media(min-width: 768px){
