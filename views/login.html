@@ -50,8 +50,23 @@
     <script src="https://kit.fontawesome.com/6cd48854d2.js" crossorigin="anonymous"></script> 
 
     <main>
-
-         <h1>aca va el main</h1>
+      <div class="form-contenedor">
+      <form action="/login" method="POST">
+            <h4 class="titulo-ingresa">Ingresá</h4>
+        <div class="form-ingresa">
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="password" name="contraseña" placeholder="Contraseña" required>
+        <div class="contenedor-recordarme">
+          <input class="checkbox-recordarme"type="checkbox" name="recordarme" value="recordarme"><div class="recordarme">Recordarme</div></input>
+        </div>
+        <div class="form-leyenda">
+        <label>¿Todavía no tenés cuenta? <a href="/register">Registrarme |</a><a href="/register"> Olvidé mi contraseña</a></label>
+      </div>
+        <div class="contenedor-boton-ingresa">
+            <button class="boton-ingresa" type="submit">Ingresar</button>
+        </div>
+    </form>
+  </div>
 
     </main>
 

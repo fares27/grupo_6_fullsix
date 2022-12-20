@@ -4,9 +4,16 @@
     padding:0px;
 }
 
+:root {
+    --verde-claro: #DEF2C8;
+    --verde-oscuro: #C5DAC1;
+    --gris-verdoso: #A9B2AC;
+    --marron: #898980;
+}
+/*  HEADER */
 .nav{
 display: flex;
-background-color: #C5DAC1;
+background-color: var(--verde-oscuro);
 padding-top: 10px;
 padding-bottom: 10px;
 justify-content: space-between;
@@ -50,6 +57,8 @@ text-align: center;
    margin-left: 10px;
 }
 
+/*  FIN HEADER */
+/*  BODY */
 a{
     text-decoration: none;
     color: black; 
@@ -64,8 +73,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* FIN BODY */
+/*  FOOTER */
+
 footer{
-    background-color: #C5DAC1;
+    background-color:var(--verde-oscuro);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,6 +111,93 @@ footer{
     padding:  15px;
     font-size: 12px;
 }
+
+/*  FIN FOOTER */
+
+/*  LOGIN */
+
+.form-contenedor{
+    background-color: var(--verde-claro);
+    margin: 20%;
+    border-radius: 35px;
+    padding: 20px;
+}
+
+form input{
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    border:white;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    outline: none;
+}
+
+.form-recordarme{
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+}
+.titulo-ingresa{
+font-size: 30px;
+font-weight: lighter;
+margin-left: 5px;
+margin-top: 15px;
+margin-bottom: 15px;
+display: flex;
+flex-direction:column;
+justify-content: space-around;
+}
+
+.contenedor-recordarme{
+    display: inline-flex;
+    flex-direction: row;
+}
+.recordarme{
+    flex-direction: row;
+    display: flex;
+    margin-left: 10px;
+    font-size: 12px;
+    align-items: center;
+}
+.checkbox-recordarme{
+    flex-direction: row;
+    margin-left: 5px
+}
+
+.boton-ingresa{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 50px;
+    padding-left: 50px;
+    background-color:var(--verde-oscuro);
+    border-radius: 12px;
+    border: 0;
+    display: flex;
+    font-size: 18px;
+}
+
+.contenedor-boton-ingresa{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7px;
+    margin-top: 20;
+}
+
+.form-leyenda a{
+    font-weight: bolder;
+}
+.form-leyenda{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+
 /*  Escritorio */
 @media(min-width: 768px){
     .menu{
