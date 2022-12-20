@@ -197,6 +197,16 @@ justify-content: space-around;
     margin-bottom: 20px;
 }
 
+.titulo-registrate{
+    font-size: 25px;
+    font-weight: lighter;
+    margin-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    }
 
 /*  Escritorio */
 @media(min-width: 768px){
