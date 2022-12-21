@@ -238,9 +238,10 @@ justify-content: space-around;
         background-color: white;
         padding: 10px;
         border-radius: 60px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         margin-left: 35%;
         margin-right: 35%;
+        margin-top: 20px;
         justify-content: center;
         font-size: large;
         font-weight: bolder;
@@ -250,23 +251,27 @@ justify-content: space-around;
         display: flex;
         font-weight: bolder;
         justify-content: center;
-        margin-bottom: 20px;
+        border-bottom: solid white 5px;
+        padding: 10px;
     }
     .duracion{
         color: white;
         display: flex;
         justify-content: center;
         font-weight: bolder;
-        margin-bottom: 20px;
+        border-bottom: solid white 5px;
+        padding: 10px;
     }
     .items-producto{
         color: white;
         display: flex;
-        margin-bottom: 20px;
+        border-bottom: solid white 5px;
     }
     .boton-producto{
         display: flex;
         justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
 
     .boton-producto button{
@@ -295,18 +300,15 @@ justify-content: space-around;
 
     .inicial{
         background-color: var(--verde-oscuro);
-        border-radius: 30px;
-        padding: 20px;
+        border-radius: 50px;
     }
     .mensual{
         background-color: var(--gris-verdoso);
-        border-radius: 30px;
-        padding: 20px;
+        border-radius: 50px;
     }
     .semestral{
         background-color: var(--marron);
-        border-radius: 30px;
-        padding: 20px;
+        border-radius: 50px;
     }
     
     .items-producto ul{
@@ -315,9 +317,11 @@ justify-content: space-around;
         align-items: center;
         padding: 10px;
         text-align: center;
+        text-decoration: none;
     }
-
-
+    .items-producto ul li{
+        text-decoration: none;
+    }
 
 
 
@@ -371,4 +375,39 @@ justify-content: space-around;
         font-size: 12px;
         padding: 0%;
     }
+
+    .caja-main{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .inicial{
+        height: 680px;
+        align-items: center;
+        margin: 30px;
+    }
+    .mensual{
+        height: 680px;
+        align-items: center;
+        margin: 30px;
+    }
+    .semestral{
+        height: 680px;
+        align-items: center;
+        margin: 30px;
+    }
+
+    .producto{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+        justify-content: space-around;
+    }
+
+
+
 }
