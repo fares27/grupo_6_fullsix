@@ -114,7 +114,7 @@ footer{
 
 /*  FIN FOOTER */
 
-/*  LOGIN */
+/*  LOGIN / REGISTER*/
 
 .form-contenedor{
     background-color: var(--verde-claro);
@@ -208,6 +208,119 @@ justify-content: space-around;
     justify-content: space-around;
     }
 
+    /* FIN LOGIN / REGISTER */
+
+    /*  PRODUCT DETAIL */
+    .titulo-productDetail{
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        background-color: var(--verde-claro);
+        margin-left: 35%;
+        margin-right: 35%;
+        border-radius: 60px;
+        padding: 15px;
+        font-weight: normal;
+    }
+
+    .producto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20%;
+        margin-left: 20%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .precio-producto{
+        display: flex;
+        background-color: white;
+        padding: 10px;
+        border-radius: 60px;
+        margin-bottom: 20px;
+        margin-left: 35%;
+        margin-right: 35%;
+        justify-content: center;
+        font-size: large;
+        font-weight: bolder;
+    }
+    .titulo-producto{
+        color: white;
+        display: flex;
+        font-weight: bolder;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .duracion{
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-weight: bolder;
+        margin-bottom: 20px;
+    }
+    .items-producto{
+        color: white;
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .boton-producto{
+        display: flex;
+        justify-content: center;
+    }
+
+    .boton-producto button{
+        background-color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 25px;
+        padding-left: 25px;
+        border-radius: 15px;
+        border: 0;
+        font-size: medium;
+    }
+
+    .inicial button{
+        color: var(--verde-oscuro);
+        font-weight: bold;
+    }
+    .mensual button{
+        color: var(--gris-verdoso);
+        font-weight: bold;
+    }
+    .semestral button{
+        color: var(--marron);
+        font-weight: bold;
+    }
+
+    .inicial{
+        background-color: var(--verde-oscuro);
+        border-radius: 30px;
+        padding: 20px;
+    }
+    .mensual{
+        background-color: var(--gris-verdoso);
+        border-radius: 30px;
+        padding: 20px;
+    }
+    .semestral{
+        background-color: var(--marron);
+        border-radius: 30px;
+        padding: 20px;
+    }
+    
+    .items-producto ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+    }
+
+
+
+
+
 /*  Escritorio */
 @media(min-width: 768px){
     .menu{
@@ -258,6 +371,4 @@ justify-content: space-around;
         font-size: 12px;
         padding: 0%;
     }
-
-    
 }
