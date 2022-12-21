@@ -221,6 +221,7 @@ justify-content: space-around;
         border-radius: 60px;
         padding: 15px;
         font-weight: normal;
+        text-align: center;
     }
 
     .producto{
@@ -245,6 +246,7 @@ justify-content: space-around;
         justify-content: center;
         font-size: large;
         font-weight: bolder;
+        text-align: center;
     }
     .titulo-producto{
         color: white;
@@ -261,11 +263,14 @@ justify-content: space-around;
         font-weight: bolder;
         border-bottom: solid white 5px;
         padding: 10px;
+        text-align: center;
     }
     .items-producto{
         color: white;
         display: flex;
         border-bottom: solid white 5px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .boton-producto{
         display: flex;
@@ -385,19 +390,25 @@ justify-content: space-around;
     }
 
     .inicial{
-        height: 680px;
         align-items: center;
-        margin: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
     .mensual{
-        height: 680px;
         align-items: center;
-        margin: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
     .semestral{
-        height: 680px;
         align-items: center;
-        margin: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     .producto{
@@ -408,6 +419,8 @@ justify-content: space-around;
         justify-content: space-around;
     }
 
-
+    .items-producto{
+        padding: 0;
+    }
 
 }
