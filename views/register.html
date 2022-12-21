@@ -33,17 +33,17 @@
           <i class="fas fa-bars"></i>
         </div>
         <ul class="menu">
-          <li type="none"><a href="">Inicio</a></li>
+          <li type="none"><a href="/">Inicio</a></li>
           <li type="none"><a href="">Clientes</a></li>
           <li type="none"><a href="">¿Cómo funciona?</a></li>
-          <li type="none"><a href="">Servicios y Tarifas</a></li>
+          <li type="none"><a href="/productDetail">Servicios y Tarifas</a></li>
           <li type="none"><a href="">Contacto</a></li>
         </ul>
         <ul class="register-menu">
           <li type="none"><a href="/login">Ingresar</a></li>
           <li type="none"><a href="/register">Registrarme</a></li>
           <li type="none">
-            <a href=""><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+            <a href="/productCart"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
           </li>
         </ul>
       </div>
@@ -57,9 +57,9 @@
       <form action="/login" method="POST">
         <h4 class="titulo-registrate">¿No tenés cuenta? Registrate</h4>
         <div class="form-ingresa">
-          <input type="text" name="nombre" placeholder="Nombre" required>
-          <input type="email" name="email" placeholder="E-mail" required>
-          <input type="password" name="contraseña" placeholder="Contraseña" required>
+          <input type="text" name="nombre" placeholder="Nombre" required minlength="5" maxlength="25" pattern="[A-Za-z]+" title="Solo letras" >
+          <input type="email" name="email" placeholder="E-mail" required >
+          <input type="password" name="contraseña" placeholder="Contraseña" required minlength="8" maxlength="15" pattern="[A-Za-z0-9]+" title="Letras y números. Tamaño mínimo: 8. Tamaño máximo: 15">
           <div class="form-leyenda">
             <label>¿Ya estás registrado? <a href="/login">Ingresá aquí</a></label>
           </div>
