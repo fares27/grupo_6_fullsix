@@ -72,6 +72,102 @@ li {
 body {
     font-family: 'Roboto', sans-serif;
 }
+/* HOME*/
+.titulo-index h1{
+    font-weight: bold;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 30px;
+    font-size:x-large;
+}
+
+h2{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 20px;
+}
+ .clientes1 img{
+    padding-right: 10%;
+    padding-left: 10%;
+ }
+ .clientes2 img{
+    padding-right: 10%;
+    padding-left: 10%;
+ }
+ .clientes3 img{
+    padding-right: 10%;
+    padding-left: 10%;
+ }
+
+ h3{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 20px;
+ }
+
+ .como-ayudar{
+    background-color: var(--verde-oscuro);
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 40px;
+    border-radius: 30px;
+    margin-bottom: 40px;
+ }
+
+ .como-ayudar p{
+    margin-top: 20px;
+    line-height: 28px;
+ }
+
+ .como_ayudar{
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-top: 40px;
+ }
+
+ .primer-paso{
+    background-color: var(--verde-claro);
+    border-radius: 30px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-top: 40px;
+ }
+
+ .primer-paso p, .primer-paso h3,  .segundo-paso p, .segundo-paso h3{
+    margin-top: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+ }
+
+ .primer-paso h1, .segundo-paso h1{
+    padding-top: 25px;
+    font-size: 30px;
+    font-weight: 1500;
+ }
+
+ .como_funciona{
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-top: 40px;
+ }
+
+ .segundo-paso{
+    background-color: var(--verde-oscuro);
+    border-radius: 30px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+ }
+
+/* FIN HOME */
 
 /* FIN BODY */
 /*  FOOTER */
@@ -327,7 +423,6 @@ justify-content: space-around;
     .items-producto ul li{
         text-decoration: none;
     }
-
 
 
 /*  Escritorio */
