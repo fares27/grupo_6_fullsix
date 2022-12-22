@@ -1,141 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Fonts Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Iconos -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
 
-<head>
-  <!-- Fonts Family -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-  <!-- Iconos -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <!-- Estilos -->
+    <link href="/css/styles.css" rel="stylesheet" />
 
-  <!-- Estilos -->
-  <link href="/css/styles.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FullSix</title>
+  </head>
 
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FullSix</title>
-</head>
-
-<body>
-  <header>
-    <!-- <nav><input placeHolder="buscar productos,marcas" type="nav"></nav> -->
-    <navbar>
-      <div class="nav">
-        <div class="logo">
-          <img src="/img/FULL SIX 6.png" alt="Logo FullSix" width="100%" />
+  <body>
+    <header>
+      <!-- <nav><input placeHolder="buscar productos,marcas" type="nav"></nav> -->
+      <navbar>
+        <div class="nav">
+          <div class="logo">
+            <img src="/img/FULL SIX 6.png" alt="Logo FullSix" width="100%" />
+          </div>
+          <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul class="menu">
+            <li type="none"><a href="/">Inicio</a></li>
+            <li type="none"><a href="">Clientes</a></li>
+            <li type="none"><a href="">¿Cómo funciona?</a></li>
+            <li type="none">
+              <a href="/productDetail">Servicios y Tarifas</a>
+            </li>
+            <li type="none"><a href="">Contacto</a></li>
+          </ul>
+          <ul class="register-menu">
+            <li type="none"><a href="/login">Ingresar</a></li>
+            <li type="none"><a href="/register">Registrarme</a></li>
+            <li type="none">
+              <a href="/productCart"
+                ><i class="fa-sharp fa-solid fa-cart-shopping"></i
+              ></a>
+            </li>
+          </ul>
         </div>
-        <div class="burger-menu">
-          <i class="fas fa-bars"></i>
+      </navbar>
+    </header>
+    <main>
+      <section>
+        <article>
+          <div class="titulo-index">
+            <h1>TRABAJÁ CON NOSOTROS Y ENTRENÁ TU MENTE</h1>
+          </div>
+          <div class="foto-home">
+            <img src="/img/Home.png" alt="Gente en terapia" width="100%" />
+          </div>
+        </article>
+      </section>
+      <section>
+        <article class="clientes1">
+          <h2>¿Quíenes son nuestros clientes?</h2>
+          <img src="/img/Deportistas.png" alt="deportistas" width="100%" />
+          <div>
+            <h3>Deportistas</h3>
+          </div>
+        </article>
+        <article class="clientes2">
+          <img src="/img/Entrenadores.png" alt="Entrenadores" width="100%" />
+          <div>
+            <h3>Entrenadores</h3>
+          </div>
+        </article>
+        <article class="clientes3">
+          <img src="/img/Padres.png" alt="Padres de deportistas" width="100%" />
+          <div>
+            <h3>Padres y madres de deportistas</h3>
+          </div>
+        </article>
+      </section>
+      <article class="como_ayudar">
+        <div class="como-ayudar">
+          <h2>¿Cómo te podemos ayudar?</h2>
+          <p>
+            Todos atravesamos momentos difíciles, desde inseguridades personales
+            hasta problemas en nuestras relaciones. Te invitamos a que empieces
+            a transformar tu vida en terapia con un psicólogo online o cerca de
+            tu zona.
+          </p>
+          <img src="/img/como-ayudar.png" alt="Como ayudar" width="100%" />
         </div>
-        <ul class="menu">
-          <li type="none"><a href="/">Inicio</a></li>
-          <li type="none"><a href="">Clientes</a></li>
-          <li type="none"><a href="">¿Cómo funciona?</a></li>
-          <li type="none"><a href="/productDetail">Servicios y Tarifas</a></li>
-          <li type="none"><a href="">Contacto</a></li>
+      </article>
+      <article class="como_funciona">
+        <h2>¿Cómo funciona?</h2>
+        <div class="primer-paso">
+          <h1 class="numero-primer-paso">1</h1>
+          <div class="primer-paso-carta">
+            <h3>PRIMER PASO</h3>
+            <p>Registrate y elegí tu terapeuta</p>
+            <img src="/img/primer-paso.png" alt="Primer paso" width="100%" />
+          </div>
+        </div>
+        <div class="pago"></div>
+        <img src="/img/pago-mobile.png" alt="pago" width="100%" />
+        <div class="segundo-paso">
+          <h1 class="numero-segundo-paso">2</h1>
+          <div class="segundo-paso-carta">
+            <h3>SEGUNDO PASO</h3>
+            <p>Coordiná y llevá a cabo tus consultas donde sea que estés</p>
+            <img src="/img/segundo-paso.png" alt="Segundo paso" width="100%" />
+          </div>
+        </div>
+      </article>
+      <article class="nuestros-planes">
+        <h2>Conocé nuestros planes</h2>
+        <div class="inicial">
+          <div class="precio-producto">
+            <p>ARS 1500</p>
+          </div>
+          <div class="titulo-producto">
+            <h3>Plan Inicial</h3>
+          </div>
+          <div class="linea-blanca"></div>
+          <div class="duracion">
+            <p>Duracion: 60-90 minutos</p>
+          </div>
+          <div class="boton-producto">
+            <button>Contratar</button>
+          </div>
+        </div>
+      </article>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/6cd48854d2.js"
+      crossorigin="anonymous"
+    ></script>
+    <footer>
+      <div class="logo-footer">
+        <img src="/img/FULL SIX 6.png" alt="Logo FullSix" width="100%" />
+      </div>
+      <div class="footer-desktop">
+        <div class="contenedor-logos-footer">
+          <a href="">
+            <img src="img/logo_yt.png" alt="" />
+          </a>
+          <a href="">
+            <img src="img/logo_tw.png" alt="" />
+          </a>
+          <a href="">
+            <img src="img/logo_fb.png" alt="" />
+          </a>
+          <a href="">
+            <img src="img/logo_wpp.png" alt="" />
+          </a>
+          <a href="">
+            <img src="img/logo_ig.png" alt="" />
+          </a>
+        </div>
+        <ul class="links-footer">
+          <li type="none"><a href="">Términos y Condiciones</a></li>
+          <li type="none"><a href="">Políticas de Privacidad</a></li>
+          <li type="none"><a href="">Aviso Legal</a></li>
         </ul>
-        <ul class="register-menu">
-          <li type="none"><a href="/login">Ingresar</a></li>
-          <li type="none"><a href="/register">Registrarme</a></li>
-          <li type="none">
-            <a href="/productCart"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
-          </li>
-        </ul>
       </div>
-    </navbar>
-  </header>
-  <main>
-    <section>
-      <article>
-        <div class="titulo-index">
-          <h1>TRABAJÁ CON NOSOTROS Y
-            ENTRENÁ TU MENTE</h1>
-        </div>
-        <div class="foto-home">
-          <img src="/img/Home.png" alt="Gente en terapia" width="100%" />
-        </div>
-      </article>
-    </section>
-    <section>
-      <article class="clientes1">
-        <h2>¿Quíenes son nuestros clientes?</h2>
-        <img src="/img/Deportistas.png" alt="deportistas" width="100%" />
-        <div>
-          <h3>Deportistas</h3>
-        </div>
-      </article>
-      <article class="clientes2">
-        <img src="/img/Entrenadores.png" alt="Entrenadores" width="100%" />
-        <div>
-          <h3>Entrenadores</h3>
-        </div>
-      </article>
-      <article class="clientes3">
-        <img src="/img/Padres.png" alt="Padres de deportistas" width="100%" />
-        <div>
-          <h3>Padres y madres de deportistas</h3>
-        </div>
-      </article>
-    </section>
-    <article class="como_ayudar">
-      <div class="como-ayudar">
-        <h2>¿Cómo te podemos ayudar?</h2>
-        <p>Todos atravesamos momentos difíciles, desde inseguridades personales hasta problemas en nuestras relaciones.
-          Te invitamos a que empieces a transformar tu vida en terapia con un psicólogo online o cerca de tu zona.</p>
-        <img src="/img/como-ayudar.png" alt="Como ayudar" width="100%" />
-      </div>
-    </article>
-    <article class="como_funciona">
-      <h2>¿Cómo funciona?</h2>
-      <div class="primer-paso">
-        <h1>1</h1>
-        <h3>PRIMER PASO</h3>
-        <p>Registrate y elegí tu terapeuta</p>
-        <img src="/img/primer-paso.png" alt="Primer paso" width="100%" />
-      </div>
-      <div class="pago"></div>
-      <img src="/img/pago-mobile.png" alt="pago" width="100%" />
-      <div class="segundo-paso">
-        <h1>2</h1>
-        <h3>SEGUNDO PASO</h3>
-        <p>Coordiná y llevá a cabo tus consultas donde sea que estés</p>
-        <img src="/img/segundo-paso.png" alt="Segundo paso" width="100%" />
-      </div>
-    </article>
-  </main>
-  <script src="https://kit.fontawesome.com/6cd48854d2.js" crossorigin="anonymous"></script>
-  <footer>
-    <div class="logo-footer">
-      <img src="/img/FULL SIX 6.png" alt="Logo FullSix" width="100%" />
-    </div>
-    <div class="footer-desktop">
-      <div class="contenedor-logos-footer">
-        <a href="">
-          <img src="img/logo_yt.png" alt="">
-        </a>
-        <a href="">
-          <img src="img/logo_tw.png" alt="">
-        </a>
-        <a href="">
-          <img src="img/logo_fb.png" alt="">
-        </a>
-        <a href="">
-          <img src="img/logo_wpp.png" alt="">
-        </a>
-        <a href="">
-          <img src="img/logo_ig.png" alt="">
-        </a>
-
-      </div>
-      <ul class="links-footer">
-        <li type="none"><a href="">Términos y Condiciones</a></li>
-        <li type="none"><a href="">Políticas de Privacidad</a></li>
-        <li type="none"><a href="">Aviso Legal</a></li>
-      </ul>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
