@@ -208,18 +208,37 @@ h3 {
   padding-left: 20%;
   margin-top: 40px;
 }
+
+.inicial-home{
+    background-color: var(--verde-oscuro);
+    border-radius: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+}
+
+.inicial-home button {
+    color: var(--verde-oscuro);
+    font-weight: bold;
+  }
+
+.mensual-home, .semestral-home{
+    display: none;
+}
+
 .contenedor-circulos {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 7px;
 }
-.circulos-verdes {
+.circulos-verdes1, .circulos-verdes2, .circulos-verdes3 {
   background: green;
   border-radius: 50%;
   width: 8px;
   height: 8px;
   margin: 15px;
+  display: block;
 }
 .titulo-testimonio {
   margin-top: 40px;
@@ -507,7 +526,6 @@ form input {
   border-radius: 50px;
   padding-top: 1px;
   padding-bottom: 1px;
-  display: none;
 }
 
 .semestral {
@@ -515,7 +533,6 @@ form input {
   border-radius: 50px;
   padding-top: 1px;
   padding-bottom: 1px;
-  display: none;
 }
 
 .items-producto ul {
@@ -534,24 +551,63 @@ form input {
 
 /*  Tablet */
 @media (min-width: 500px){
+    .titulo-index h1{
+        text-align: left;
+        margin-left: 7%;
+    }
+
+
     .div-clientes{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
     }
-
     .clientes1 h3, .clientes2 h3,.clientes3 h3{
         font-size: 16px;
     }
-
     .clientes1, .clientes2,.clientes3{
-
        width: 40%;
     }
     .h2-clientes{
         margin-bottom: 20px;
     }
+
+    .inicial-home{
+        width: 90%;
+        margin-left: 40px;
+        margin-right: 7px;
+    }
+    .mensual-home{
+        display: block;
+        background-color: var(--gris-verdoso);
+        border-radius: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-top: 20px;
+        margin-right: 40px;
+        margin-left: 7px;
+        width: 90%;
+    }
+
+    .mensual-home button{
+        color: var(--gris-verdoso);
+        font-weight: bold;
+    }
+
+    .productos-home{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .nuestros-planes{
+        padding: 0px;
+    }
+
+    .circulos-verdes3{
+        display: none;
+    }
+
 }
 
 /*  Escritorio */
