@@ -205,7 +205,50 @@ h3 {
   padding-left: 20%;
   margin-top: 40px;
 }
-
+.contenedor-circulos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7px;
+}
+.circulos-verdes {
+  background: green;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  margin: 15px;
+}
+.titulo-testimonio {
+  margin-top: 40px;
+}
+.img-testimonio {
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.testimonios p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.testimonio-nombre-jugador {
+  font-weight: bold;
+}
+.testimonio-descripcion-jugador {
+  margin-top: 15px;
+}
+.testimonio-nombre-entrenadora {
+  font-weight: bold;
+}
+.testimonio-descripcion-entrenadora {
+  margin-top: 15px;
+}
+.segundo-testimonio {
+  display: none;
+}
 /* FIN HOME */
 
 /* FIN BODY */
@@ -459,11 +502,17 @@ form input {
 .mensual {
   background-color: var(--gris-verdoso);
   border-radius: 50px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  display: none;
 }
 
 .semestral {
   background-color: var(--marron);
   border-radius: 50px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  display: none;
 }
 
 .items-producto ul {
@@ -545,7 +594,7 @@ form input {
     margin-left: 7px;
     margin-right: 7px;
     margin-top: 40px;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
 
   .mensual {
@@ -554,6 +603,7 @@ form input {
     margin-right: 7px;
     margin-top: 40px;
     margin-bottom: 40px;
+    display: block;
   }
 
   .semestral {
@@ -562,17 +612,37 @@ form input {
     margin-right: 7px;
     margin-top: 40px;
     margin-bottom: 40px;
+    display: block;
   }
-
-  .producto {
+  .nuestros-planes {
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+  }
+  .productos {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 0;
     justify-content: center;
   }
+  .contenedor-circulos {
+    display: none;
+  }
+
+  .producto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 3px;
+    justify-content: center;
+  }
 
   .items-producto {
     padding: 0;
+  }
+  .segundo-testimonio {
+    display: block;
   }
 }
