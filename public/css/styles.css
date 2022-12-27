@@ -556,7 +556,6 @@ form input {
         margin-left: 7%;
     }
 
-
     .div-clientes{
         display: flex;
         flex-direction: row;
@@ -609,6 +608,7 @@ form input {
     }
 
 }
+
 
 /*  Escritorio */
 @media (min-width: 768px) {
@@ -671,6 +671,30 @@ form input {
     justify-content: center;
   }
 
+  .clientes1, .clientes2, .clientes3{
+    width: 33%;
+  }
+
+  .semestral-home{
+    display: block;
+    background-color: var(--marron);
+    border-radius: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-left: 7px;
+    width: 90%;
+  }
+
+  .mensual-home{
+    margin-right: 7px;
+  }
+  .semestral-home button{
+    font-weight: bold;
+    color: var(--marron);
+
+  }
   .inicial {
     align-items: center;
     margin-left: 7px;
