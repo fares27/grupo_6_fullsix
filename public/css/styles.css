@@ -118,6 +118,7 @@ h3 {
   padding-right: 40px;
   padding-left: 40px;
   padding-top: 40px;
+  padding-bottom: 10px;
   border-radius: 30px;
   margin-bottom: 40px;
 }
@@ -140,6 +141,7 @@ h3 {
   text-align: center;
   padding-right: 60px;
   padding-left: 30px;
+  padding-top: 30px;
   margin-top: 40px;
 }
 .primer-paso h1 {
@@ -159,11 +161,11 @@ h3 {
 }
 .segundo-paso p {
   margin-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .segundo-paso h3 {
   margin-top: 10px;
-  padding-right: 40px;
-  padding-left: 40px;
   font-weight: bold;
 }
 
@@ -189,6 +191,7 @@ h3 {
   margin-bottom: 40px;
   padding-right: 45px;
   padding-left: 30px;
+  padding-top: 30px;
 }
 .segundo-paso-carta {
   margin-top: 20px;
@@ -526,6 +529,29 @@ form input {
 
 .items-producto ul li {
   text-decoration: none;
+}
+
+
+/*  Tablet */
+@media (min-width: 500px){
+    .div-clientes{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .clientes1 h3, .clientes2 h3,.clientes3 h3{
+        font-size: 16px;
+    }
+
+    .clientes1, .clientes2,.clientes3{
+
+       width: 40%;
+    }
+    .h2-clientes{
+        margin-bottom: 20px;
+    }
 }
 
 /*  Escritorio */
