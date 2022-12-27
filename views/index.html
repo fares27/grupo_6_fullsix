@@ -1,248 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Fonts Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Iconos -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
 
-<head>
-  <!-- Fonts Family -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-  <!-- Iconos -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <!-- Estilos -->
+    <link href="/css/styles.css" rel="stylesheet" />
 
-  <!-- Estilos -->
-  <link href="/css/styles.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FullSix</title>
+  </head>
 
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FullSix</title>
-</head>
-
-<body>
-  <header>
-    <!-- <nav><input placeHolder="buscar productos,marcas" type="nav"></nav> -->
-    <navbar>
-      <div class="nav">
-        <div class="logo">
-          <img src="/img/FULL SIX 6.png" alt="Logo FullSix" width="100%" />
+  <body>
+    <header>
+      <!-- <nav><input placeHolder="buscar productos,marcas" type="nav"></nav> -->
+      <navbar>
+        <div class="nav">
+          <div class="logo">
+            <img src="/img/FULL SIX 6.png" alt="Logo FullSix" width="100%" />
+          </div>
+          <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul class="menu">
+            <li type="none"><a href="/">Inicio</a></li>
+            <li type="none"><a href="/#clientes">Clientes</a></li>
+            <li type="none"><a href="/#comofunciona">¿Cómo funciona?</a></li>
+            <li type="none">
+              <a href="/productDetail">Servicios y Tarifas</a>
+            </li>
+            <li type="none"><a href="">Contacto</a></li>
+          </ul>
+          <ul class="register-menu">
+            <li type="none"><a href="/login">Ingresar</a></li>
+            <li type="none"><a href="/register">Registrarme</a></li>
+            <li type="none">
+              <a href="/productCart"
+                ><i class="fa-sharp fa-solid fa-cart-shopping"></i
+              ></a>
+            </li>
+          </ul>
         </div>
-        <div class="burger-menu">
-          <i class="fas fa-bars"></i>
+      </navbar>
+    </header>
+    <main>
+      <section>
+        <article class="header-contenedor">
+          <div class="titulo-index">
+            <h1>TRABAJÁ CON NOSOTROS Y ENTRENÁ TU MENTE</h1>
+            <img
+              class="img-logo-fullsix"
+              src="/img/FULL SIX 6.png"
+              alt="Logo Full Six"
+            />
+          </div>
+          <div class="foto-home">
+            <img src="/img/Home.png" alt="Gente en terapia" width="100%" />
+          </div>
+        </article>
+      </section>
+      <a name="clientes"></a>
+      <h2 class="h2-clientes">¿Quíenes son nuestros clientes?</h2>
+      <section class="div-clientes">
+        <article class="clientes1">
+          <img src="/img/Deportistas.png" alt="deportistas" width="100%" />
+          <div>
+            <h3>Deportistas</h3>
+          </div>
+        </article>
+        <article class="clientes2">
+          <img src="/img/Entrenadores.png" alt="Entrenadores" width="100%" />
+          <div>
+            <h3>Entrenadores</h3>
+          </div>
+        </article>
+        <article class="clientes3">
+          <img src="/img/Padres.png" alt="Padres de deportistas" width="100%" />
+          <div>
+            <h3>Padres y madres de deportistas</h3>
+          </div>
+        </article>
+      </section>
+      <article class="como_ayudar">
+        <div class="como-ayudar">
+          <h2>¿Cómo te podemos ayudar?</h2>
+          <p>
+            Todos atravesamos momentos difíciles, desde inseguridades personales
+            hasta problemas en nuestras relaciones. Te invitamos a que empieces
+            a transformar tu vida en terapia con un psicólogo online o cerca de
+            tu zona.
+          </p>
+          <img src="/img/como-ayudar.png" alt="Como ayudar" width="100%" />
         </div>
-        <ul class="menu">
-          <li type="none"><a href="/">Inicio</a></li>
-          <li type="none"><a href="/#clientes">Clientes</a></li>
-          <li type="none"><a href="/#comofunciona">¿Cómo funciona?</a></li>
-          <li type="none">
-            <a href="/productDetail">Servicios y Tarifas</a>
-          </li>
-          <li type="none"><a href="">Contacto</a></li>
+      </article>
+      <a name="comofunciona"></a>
+      <article class="como_funciona">
+        <h2>¿Cómo funciona?</h2>
+        <div class="primer-paso">
+          <h1 class="numero-primer-paso">1</h1>
+          <div class="primer-paso-carta">
+            <h3>PRIMER PASO</h3>
+            <p>Registrate y elegí tu terapeuta</p>
+            <img src="/img/primer-paso.png" alt="Primer paso" width="100%" />
+          </div>
+        </div>
+        <div class="pago">
+          <img src="/img/pago-mobile.png" alt="pago" width="100%" />
+        </div>
+        <div class="segundo-paso">
+          <h1 class="numero-segundo-paso">2</h1>
+          <div class="segundo-paso-carta">
+            <h3>SEGUNDO PASO</h3>
+            <p>Coordiná y llevá a cabo tus consultas donde sea que estés</p>
+            <img src="/img/segundo-paso.png" alt="Segundo paso" width="100%" />
+          </div>
+        </div>
+      </article>
+      <article class="nuestros-planes">
+        <h2>Conocé nuestros planes</h2>
+        <div class="productos-home">
+          <div class="inicial-home">
+            <div class="precio-producto">
+              <p>ARS 1500</p>
+            </div>
+            <div class="titulo-producto">
+              <h3>Plan Inicial</h3>
+            </div>
+            <div class="duracion">
+              <p>Duracion: 60-90 min</p>
+            </div>
+            <div class="boton-producto">
+              <button>Contratar</button>
+            </div>
+          </div>
+          <div class="mensual-home">
+            <div class="precio-producto">
+              <p>ARS 3000</p>
+            </div>
+            <div class="titulo-producto">
+              <h3>Plan Mensual</h3>
+            </div>
+            <div class="duracion">
+              <p>Duracion: 1 mes</p>
+            </div>
+            <div class="boton-producto">
+              <button>Contratar</button>
+            </div>
+          </div>
+          <div class="semestral-home">
+            <div class="precio-producto">
+              <p>ARS 15000</p>
+            </div>
+            <div class="titulo-producto">
+              <h3>Plan Semestral</h3>
+            </div>
+            <div class="duracion">
+              <p>Duracion: 6 meses</p>
+            </div>
+            <div class="boton-producto">
+              <button>Contratar</button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div class="contenedor-circulos">
+        <div class="circulos-verdes1"></div>
+        <div class="circulos-verdes2"></div>
+        <div class="circulos-verdes3"></div>
+      </div>
+      <article class="testimonios">
+        <h2 class="titulo-testimonio">Testimonios</h2>
+        <div class="primer-testimonio">
+          <div class="img-contenedor">
+            <img
+              class="img-testimonio"
+              src="/img/primer_testimonio.jpg"
+              alt="Jugador de futbol sentado en una pelota"
+            />
+          </div>
+          <p class="testimonio-nombre-jugador">
+            Erik Quintela - Jugador de fútbol
+          </p>
+          <p class="testimonio-descripcion-jugador">
+            «Manu me ayudó mucho a conocerme como jugador, a conocer mis
+            fortalezas para explotarlas y mis debilidades para mejorarlas.
+            Quiero animar a jugadores y entrenadores a trabajar con Manu para
+            mejorar sus rendimientos, ya que en el fútbol la mente tiene un
+            papel fundamental.»
+          </p>
+        </div>
+        <div class="segundo-testimonio">
+          <div class="img-contenedor">
+            <img
+              class="img-testimonio"
+              src="/img/segundo-testimonio.jpg"
+              alt="Atleta corriendo"
+            />
+          </div>
+          <p class="testimonio-nombre-entrenadora">
+            Dani Otero - Entrenadora de tenis
+          </p>
+          <p class="testimonio-descripcion-entrenadora">
+            Este verano decidimos incorporar el componente psicológico, y para
+            ello contactamos con Manu Santos. Realizó una sesión con nuestros
+            deportistas, con una parte teórica y una parte práctica en la que
+            llevamos a la práctica los conceptos que nos había explicado. La
+            valoración es muy positiva por la claridad con la que explicó los
+            conceptos y por cómo conectó con los deportistas, de forma muy
+            práctica y comprensible para los chicos. Considero que como
+            entrenadores también nos puede ayudar mucho en la enseñanza del
+            tenis. Por todo ello les recomiendo que si quieren introducir la
+            psicología deportiva y el entrenamiento mental en su entrenamiento,
+            aconsejo que se contacten con Manu porque les será de muchísima
+            ayuda.»
+          </p>
+        </div>
+      </article>
+      <div class="contenedor-circulos">
+        <div class="circulos-verdes1"></div>
+        <div class="circulos-verdes2"></div>
+      </div>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/6cd48854d2.js"
+      crossorigin="anonymous"
+    ></script>
+    <footer>
+      <div class="logo-footer">
+        <img src="/img/FULL SIX 6.png" alt="Logo FullSix" width="100%" />
+      </div>
+      <div class="footer-desktop">
+        <div class="contenedor-logos-footer">
+          <a href="">
+            <img src="img/logo_yt.png" alt="" />
+          </a>
+          <a href="">
+            <img src="img/logo_tw.png" alt="" />
+          </a>
+          <a href="">
+            <img src="img/logo_fb.png" alt="" />
+          </a>
+          <a href="">
+            <img src="img/logo_wpp.png" alt="" />
+          </a>
+          <a href="">
+            <img src="img/logo_ig.png" alt="" />
+          </a>
+        </div>
+        <ul class="links-footer">
+          <li type="none"><a href="">Términos y Condiciones</a></li>
+          <li type="none"><a href="">Políticas de Privacidad</a></li>
+          <li type="none"><a href="">Aviso Legal</a></li>
         </ul>
-        <ul class="register-menu">
-          <li type="none"><a href="/login">Ingresar</a></li>
-          <li type="none"><a href="/register">Registrarme</a></li>
-          <li type="none">
-            <a href="/productCart"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
-          </li>
-        </ul>
       </div>
-    </navbar>
-  </header>
-  <main>
-    <section>
-      <article>
-        <div class="titulo-index">
-          <h1>TRABAJÁ CON NOSOTROS Y ENTRENÁ TU MENTE</h1>
-        </div>
-        <div class="foto-home">
-          <img src="/img/Home.png" alt="Gente en terapia" width="100%" />
-        </div>
-      </article>
-    </section>
-    <a name="clientes"></a>
-    <h2 class="h2-clientes">¿Quíenes son nuestros clientes?</h2>
-    <section class="div-clientes">
-      <article class="clientes1">
-        <img src="/img/Deportistas.png" alt="deportistas" width="100%" />
-        <div>
-          <h3>Deportistas</h3>
-        </div>
-      </article>
-      <article class="clientes2">
-        <img src="/img/Entrenadores.png" alt="Entrenadores" width="100%" />
-        <div>
-          <h3>Entrenadores</h3>
-        </div>
-      </article>
-      <article class="clientes3">
-        <img src="/img/Padres.png" alt="Padres de deportistas" width="100%" />
-        <div>
-          <h3>Padres y madres de deportistas</h3>
-        </div>
-      </article>
-    </section>
-    <article class="como_ayudar">
-      <div class="como-ayudar">
-        <h2>¿Cómo te podemos ayudar?</h2>
-        <p>
-          Todos atravesamos momentos difíciles, desde inseguridades personales
-          hasta problemas en nuestras relaciones. Te invitamos a que empieces
-          a transformar tu vida en terapia con un psicólogo online o cerca de
-          tu zona.
-        </p>
-        <img src="/img/como-ayudar.png" alt="Como ayudar" width="100%" />
-      </div>
-    </article>
-    <a name="comofunciona"></a>
-    <article class="como_funciona">
-      <h2>¿Cómo funciona?</h2>
-      <div class="primer-paso">
-        <h1 class="numero-primer-paso">1</h1>
-        <div class="primer-paso-carta">
-          <h3>PRIMER PASO</h3>
-          <p>Registrate y elegí tu terapeuta</p>
-          <img src="/img/primer-paso.png" alt="Primer paso" width="100%" />
-        </div>
-      </div>
-      <div class="pago">
-      <img src="/img/pago-mobile.png" alt="pago" width="100%" />
-    </div>
-      <div class="segundo-paso">
-        <h1 class="numero-segundo-paso">2</h1>
-        <div class="segundo-paso-carta">
-          <h3>SEGUNDO PASO</h3>
-          <p>Coordiná y llevá a cabo tus consultas donde sea que estés</p>
-          <img src="/img/segundo-paso.png" alt="Segundo paso" width="100%" />
-        </div>
-      </div>
-    </article>
-    <article class="nuestros-planes">
-      <h2>Conocé nuestros planes</h2>
-      <div class="productos-home">
-        <div class="inicial-home">
-          <div class="precio-producto">
-            <p>ARS 1500</p>
-          </div>
-          <div class="titulo-producto">
-            <h3>Plan Inicial</h3>
-          </div>
-          <div class="duracion">
-            <p>Duracion: 60-90 min</p>
-          </div>
-          <div class="boton-producto">
-            <button>Contratar</button>
-          </div>
-        </div>
-        <div class="mensual-home">
-          <div class="precio-producto">
-            <p>ARS 3000</p>
-          </div>
-          <div class="titulo-producto">
-            <h3>Plan Mensual</h3>
-          </div>
-          <div class="duracion">
-            <p>Duracion: 1 mes</p>
-          </div>
-          <div class="boton-producto">
-            <button>Contratar</button>
-          </div>
-        </div>
-        <div class="semestral-home">
-          <div class="precio-producto">
-            <p>ARS 15000</p>
-          </div>
-          <div class="titulo-producto">
-            <h3>Plan Semestral</h3>
-          </div>
-          <div class="duracion">
-            <p>Duracion: 6 meses</p>
-          </div>
-          <div class="boton-producto">
-            <button>Contratar</button>
-          </div>
-        </div>
-      </div>
-    </article>
-    <div class="contenedor-circulos">
-      <div class="circulos-verdes1"></div>
-      <div class="circulos-verdes2"></div>
-      <div class="circulos-verdes3"></div>
-    </div>
-    <article class="testimonios">
-      <h2 class="titulo-testimonio">Testimonios</h2>
-      <div class="primer-testimonio">
-        <div class="img-contenedor">
-          <img class="img-testimonio" src="/img/primer_testimonio.jpg" alt="Jugador de futbol sentado en una pelota" />
-        </div>
-        <p class="testimonio-nombre-jugador">
-          Erik Quintela - Jugador de fútbol
-        </p>
-        <p class="testimonio-descripcion-jugador">
-          «Manu me ayudó mucho a conocerme como jugador, a conocer mis
-          fortalezas para explotarlas y mis debilidades para mejorarlas.
-          Quiero animar a jugadores y entrenadores a trabajar con Manu para
-          mejorar sus rendimientos, ya que en el fútbol la mente tiene un
-          papel fundamental.»
-        </p>
-      </div>
-      <div class="segundo-testimonio">
-        <div class="img-contenedor">
-          <img class="img-testimonio" src="/img/segundo-testimonio.jpg" alt="Atleta corriendo" />
-        </div>
-        <p class="testimonio-nombre-entrenadora">
-          Dani Otero - Entrenadora de tenis
-        </p>
-        <p class="testimonio-descripcion-entrenadora">
-          Este verano decidimos incorporar el componente psicológico, y para
-          ello contactamos con Manu Santos. Realizó una sesión con nuestros
-          deportistas, con una parte teórica y una parte práctica en la que
-          llevamos a la práctica los conceptos que nos había explicado. La
-          valoración es muy positiva por la claridad con la que explicó los
-          conceptos y por cómo conectó con los deportistas, de forma muy
-          práctica y comprensible para los chicos. Considero que como
-          entrenadores también nos puede ayudar mucho en la enseñanza del
-          tenis. Por todo ello les recomiendo que si quieren introducir la
-          psicología deportiva y el entrenamiento mental en su entrenamiento,
-          aconsejo que se contacten con Manu porque les será de muchísima
-          ayuda.»
-        </p>
-      </div>
-    </article>
-    <div class="contenedor-circulos">
-      <div class="circulos-verdes1"></div>
-      <div class="circulos-verdes2"></div>
-    </div>
-  </main>
-  <script src="https://kit.fontawesome.com/6cd48854d2.js" crossorigin="anonymous"></script>
-  <footer>
-    <div class="logo-footer">
-      <img src="/img/FULL SIX 6.png" alt="Logo FullSix" width="100%" />
-    </div>
-    <div class="footer-desktop">
-      <div class="contenedor-logos-footer">
-        <a href="">
-          <img src="img/logo_yt.png" alt="" />
-        </a>
-        <a href="">
-          <img src="img/logo_tw.png" alt="" />
-        </a>
-        <a href="">
-          <img src="img/logo_fb.png" alt="" />
-        </a>
-        <a href="">
-          <img src="img/logo_wpp.png" alt="" />
-        </a>
-        <a href="">
-          <img src="img/logo_ig.png" alt="" />
-        </a>
-      </div>
-      <ul class="links-footer">
-        <li type="none"><a href="">Términos y Condiciones</a></li>
-        <li type="none"><a href="">Políticas de Privacidad</a></li>
-        <li type="none"><a href="">Aviso Legal</a></li>
-      </ul>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

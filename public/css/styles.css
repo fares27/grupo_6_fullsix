@@ -74,6 +74,10 @@ body {
 }
 
 /* HOME*/
+.img-logo-fullsix {
+  display: none;
+}
+
 .titulo-index h1 {
   font-weight: bold;
   text-align: center;
@@ -209,21 +213,22 @@ h3 {
   margin-top: 40px;
 }
 
-.inicial-home{
-    background-color: var(--verde-oscuro);
-    border-radius: 30px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-top: 20px;
+.inicial-home {
+  background-color: var(--verde-oscuro);
+  border-radius: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 20px;
 }
 
 .inicial-home button {
-    color: var(--verde-oscuro);
-    font-weight: bold;
-  }
+  color: var(--verde-oscuro);
+  font-weight: bold;
+}
 
-.mensual-home, .semestral-home{
-    display: none;
+.mensual-home,
+.semestral-home {
+  display: none;
 }
 
 .contenedor-circulos {
@@ -232,7 +237,9 @@ h3 {
   align-items: center;
   margin: 7px;
 }
-.circulos-verdes1, .circulos-verdes2, .circulos-verdes3 {
+.circulos-verdes1,
+.circulos-verdes2,
+.circulos-verdes3 {
   background: green;
   border-radius: 50%;
   width: 8px;
@@ -553,70 +560,82 @@ form input {
   text-decoration: none;
 }
 
-
 /*  Tablet */
-@media (min-width: 500px){
-    .titulo-index h1{
-        text-align: left;
-        margin-left: 7%;
-    }
+@media (min-width: 500px) {
+  .titulo-index h1 {
+    text-align: left;
+    margin-left: 7%;
+  }
 
-    .div-clientes{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .clientes1 h3, .clientes2 h3,.clientes3 h3{
-        font-size: 16px;
-    }
-    .clientes1, .clientes2,.clientes3{
-       width: 40%;
-    }
-    .h2-clientes{
-        margin-bottom: 20px;
-    }
+  .div-clientes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .clientes1 h3,
+  .clientes2 h3,
+  .clientes3 h3 {
+    font-size: 16px;
+  }
+  .clientes1,
+  .clientes2,
+  .clientes3 {
+    width: 40%;
+  }
+  .h2-clientes {
+    margin-bottom: 20px;
+  }
 
-    .inicial-home{
-        width: 90%;
-        margin-left: 40px;
-        margin-right: 7px;
-    }
-    .mensual-home{
-        display: block;
-        background-color: var(--gris-verdoso);
-        border-radius: 30px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        margin-top: 20px;
-        margin-right: 40px;
-        margin-left: 7px;
-        width: 90%;
-    }
+  .inicial-home {
+    width: 90%;
+    margin-left: 40px;
+    margin-right: 7px;
+  }
+  .mensual-home {
+    display: block;
+    background-color: var(--gris-verdoso);
+    border-radius: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-left: 7px;
+    width: 90%;
+  }
 
-    .mensual-home button{
-        color: var(--gris-verdoso);
-        font-weight: bold;
-    }
+  .mensual-home button {
+    color: var(--gris-verdoso);
+    font-weight: bold;
+  }
 
-    .productos-home{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    .nuestros-planes{
-        padding: 0px;
-    }
+  .productos-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .nuestros-planes {
+    padding: 0px;
+  }
 
-    .circulos-verdes3{
-        display: none;
-    }
-
+  .circulos-verdes3 {
+    display: none;
+  }
 }
-
 
 /*  Escritorio */
 @media (min-width: 768px) {
+  .header-contenedor {
+    display: flex;
+  }
+  .titulo-index {
+    position: relative;
+  }
+  .img-logo-fullsix {
+    display: flex;
+    position: absolute;
+  }
+
   .menu {
     display: flex;
     justify-content: space-between;
@@ -676,11 +695,13 @@ form input {
     justify-content: center;
   }
 
-  .clientes1, .clientes2, .clientes3{
+  .clientes1,
+  .clientes2,
+  .clientes3 {
     width: 33%;
   }
 
-  .semestral-home{
+  .semestral-home {
     display: block;
     background-color: var(--marron);
     border-radius: 30px;
@@ -692,13 +713,12 @@ form input {
     width: 90%;
   }
 
-  .mensual-home{
+  .mensual-home {
     margin-right: 7px;
   }
-  .semestral-home button{
+  .semestral-home button {
     font-weight: bold;
     color: var(--marron);
-
   }
   .inicial {
     align-items: center;
