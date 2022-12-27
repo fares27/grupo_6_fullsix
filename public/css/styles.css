@@ -242,6 +242,11 @@ h3 {
 }
 .titulo-testimonio {
   margin-top: 40px;
+  background-color: var(--verde-claro);
+  margin-right: 30%;
+  margin-left: 30%;
+  padding: 10px;
+  border-radius: 30px;
 }
 .img-testimonio {
   display: block;
