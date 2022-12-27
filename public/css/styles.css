@@ -757,3 +757,39 @@ form input {
     display: block;
   }
 }
+
+/* Carrito de compras */
+
+.contenedor{
+  margin:100px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+
+.top{
+  background-color:#c5dac1;
+
+  padding: 10px;
+}
+
+.categorias{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
+}
+
+.bottom{
+  background-color:#c5dac1;
+  display: flex;
+  padding: 10px;
+}
+
+.titulo{
+  text-align: left;
+}
+
+.cantidad{
+  width: 40px;
+}
