@@ -608,6 +608,7 @@ form input {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-top: 15px;
 }
 
 .detalle-carrito strong{
@@ -619,6 +620,7 @@ form input {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-top: 15px;
 }
 
 .importes-carrito p{
@@ -633,6 +635,22 @@ form input {
   justify-content: space-between;
 }
 
+.end button{
+  font-size: large;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 60px;
+  padding-left: 60px;
+  background-color: var(--verde-claro);
+  border-radius: 15px;
+  border: 0px solid transparent;
+  margin-top: 20px;
+}
+
+.end{
+  display: flex;
+  justify-content: center;
+}
 
 /* FIN PRODUCT CART */
 
