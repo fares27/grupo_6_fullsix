@@ -335,9 +335,12 @@ footer {
 
 .form-contenedor {
   background-color: var(--verde-claro);
-  margin: 20%;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 5%;
+  margin-bottom: 10%;
   border-radius: 35px;
-  padding: 20px;
+  padding: 5px;
 }
 
 form input {
@@ -346,10 +349,10 @@ form input {
   border-radius: 3px;
   border: white;
   padding: 10px;
-  margin-top: 15px;
   margin-bottom: 15px;
-  width: 100%;
+  width: 90%;
   outline: none;
+  margin-left: 5%;
 }
 
 .form-recordarme {
@@ -367,11 +370,14 @@ form input {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  text-align: center;
 }
+
 
 .contenedor-recordarme {
   display: inline-flex;
   flex-direction: row;
+  justify-items: center;
 }
 
 .recordarme {
@@ -379,12 +385,12 @@ form input {
   display: flex;
   margin-left: 10px;
   font-size: 12px;
-  align-items: center;
 }
 
 .checkbox-recordarme {
   flex-direction: row;
   margin-left: 5px;
+  text-align: center;
 }
 
 .boton-ingresa {
@@ -416,6 +422,7 @@ form input {
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .titulo-registrate {
@@ -426,7 +433,7 @@ form input {
   margin-bottom: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  text-align: center;
 }
 
 /* FIN LOGIN / REGISTER */
@@ -567,9 +574,12 @@ form input {
 /* PRODUCT CART */
 
 .contenedor {
-  margin: 100px;
+  width: 80%;
   margin-top: 20px;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
 }
 
 .top {
@@ -728,6 +738,15 @@ form input {
 
   .circulos-verdes3 {
     display: none;
+  }
+
+  .contenedor {
+    margin-left: 50px;
+  }
+
+  .form-contenedor{
+    margin-left: 30%;
+    margin-right: 30%;
   }
 }
 
@@ -941,5 +960,14 @@ form input {
 
   .end {
     margin-left: 40%;
+  }
+
+  .contenedor {
+    margin-left: 60px;
+  }
+
+  .form-contenedor{
+    margin-left: 30%;
+    margin-right: 30%;
   }
 }
