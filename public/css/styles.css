@@ -560,6 +560,111 @@ form input {
   text-decoration: none;
 }
 
+<<<<<<< HEAD
+=======
+/* PRODUCT CART */
+
+.contenedor{
+  margin:100px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.top{
+  background-color:var(--verde-claro);
+  padding: 10px;
+  border-radius: 30px;
+}
+.categorias{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
+}
+
+.cupon input{
+  padding: 10px;
+  background-color: gainsboro;
+  border-radius: 3px;
+  border: 0px solid transparent;
+  margin: 10px;
+}
+
+.cupon button{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: var(--verde-claro);
+  border-radius: 15px;
+  border: 0px solid transparent;
+  margin: 10px;
+}
+
+.bottom{
+  background-color: var(--verde-oscuro);
+  padding: 10px;
+  border-radius: 5px;
+
+}
+.titulo-bottom h3{
+  text-align: center;
+}
+.cantidad{
+  width: 40px;
+}
+
+.detalle-carrito{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.detalle-carrito strong{
+  border-bottom: gray solid 1px;
+  padding: 5px;
+}
+
+.importes-carrito{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.importes-carrito p{
+  border-bottom: gray solid 1px;
+  text-align: right;
+  padding: 5px;
+}
+
+.contenedor-detalle{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.end button{
+  font-size: large;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 60px;
+  padding-left: 60px;
+  background-color: var(--verde-claro);
+  border-radius: 15px;
+  border: 0px solid transparent;
+  margin-top: 20px;
+}
+
+.end{
+  display: flex;
+  justify-content: center;
+}
+
+/* FIN PRODUCT CART */
+
+>>>>>>> fd23b0e3745c76d65841f8b386cb1aa4b587efb8
 /*  Tablet */
 @media (min-width: 500px) {
   .titulo-index h1 {
@@ -776,40 +881,28 @@ form input {
   .segundo-testimonio {
     display: block;
   }
+
+  .bottom{
+    width: 60%;
+    margin-left: 40%;
+  }
+
+  .titulo-bottom h3{
+    margin-left: 90%;
+  }
+
+  .detalle-carrito{
+    width: 30%;  
+  }
+  .importes-carrito{
+     width: 30%;
+  }
+  .contenedor-detalle{
+    justify-content: right;
+  }
+  
+  .end{
+    margin-left:40%;
+  }
 }
 
-/* Carrito de compras */
-
-.contenedor{
-  margin:100px;
-  margin-top: 20px;
-  padding: 10px;
-}
-
-
-.top{
-  background-color:#c5dac1;
-
-  padding: 10px;
-}
-
-.categorias{
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-  padding: 10px;
-}
-
-.bottom{
-  background-color:#c5dac1;
-  display:flex;
-  padding: 10px;
-}
-
-.titulo{
-  text-align: left;
-}
-
-.cantidad{
-  width: 40px;
-}
