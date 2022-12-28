@@ -560,29 +560,27 @@ form input {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
-=======
 /* PRODUCT CART */
 
-.contenedor{
-  margin:100px;
+.contenedor {
+  margin: 100px;
   margin-top: 20px;
   padding: 10px;
 }
 
-.top{
-  background-color:var(--verde-claro);
+.top {
+  background-color: var(--verde-claro);
   padding: 10px;
   border-radius: 30px;
 }
-.categorias{
+.categorias {
   display: flex;
   justify-content: space-between;
   margin: 10px;
   padding: 10px;
 }
 
-.cupon input{
+.cupon input {
   padding: 10px;
   background-color: gainsboro;
   border-radius: 3px;
@@ -590,7 +588,7 @@ form input {
   margin: 10px;
 }
 
-.cupon button{
+.cupon button {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 20px;
@@ -601,51 +599,50 @@ form input {
   margin: 10px;
 }
 
-.bottom{
+.bottom {
   background-color: var(--verde-oscuro);
   padding: 10px;
   border-radius: 5px;
-
 }
-.titulo-bottom h3{
+.titulo-bottom h3 {
   text-align: center;
 }
-.cantidad{
+.cantidad {
   width: 40px;
 }
 
-.detalle-carrito{
+.detalle-carrito {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-top: 15px;
 }
 
-.detalle-carrito strong{
+.detalle-carrito strong {
   border-bottom: gray solid 1px;
   padding: 5px;
 }
 
-.importes-carrito{
+.importes-carrito {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-top: 15px;
 }
 
-.importes-carrito p{
+.importes-carrito p {
   border-bottom: gray solid 1px;
   text-align: right;
   padding: 5px;
 }
 
-.contenedor-detalle{
+.contenedor-detalle {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.end button{
+.end button {
   font-size: large;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -657,14 +654,13 @@ form input {
   margin-top: 20px;
 }
 
-.end{
+.end {
   display: flex;
   justify-content: center;
 }
 
 /* FIN PRODUCT CART */
 
->>>>>>> fd23b0e3745c76d65841f8b386cb1aa4b587efb8
 /*  Tablet */
 @media (min-width: 500px) {
   .titulo-index h1 {
@@ -734,11 +730,31 @@ form input {
     display: flex;
   }
   .titulo-index {
-    position: relative;
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
   }
   .img-logo-fullsix {
     display: flex;
-    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: auto;
+    margin-top: 30px;
+  }
+  .header-contenedor h1 {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 500;
+  }
+  .foto-home {
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .img-foto-home {
+    width: 100%;
+    height: auto;
   }
 
   .menu {
@@ -882,27 +898,26 @@ form input {
     display: block;
   }
 
-  .bottom{
+  .bottom {
     width: 60%;
     margin-left: 40%;
   }
 
-  .titulo-bottom h3{
+  .titulo-bottom h3 {
     margin-left: 90%;
   }
 
-  .detalle-carrito{
-    width: 30%;  
+  .detalle-carrito {
+    width: 30%;
   }
-  .importes-carrito{
-     width: 30%;
+  .importes-carrito {
+    width: 30%;
   }
-  .contenedor-detalle{
+  .contenedor-detalle {
     justify-content: right;
   }
-  
-  .end{
-    margin-left:40%;
+
+  .end {
+    margin-left: 40%;
   }
 }
-
