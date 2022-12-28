@@ -595,6 +595,7 @@ form input {
 .bottom{
   background-color: var(--verde-oscuro);
   padding: 10px;
+  border-radius: 5px;
 
 }
 .titulo-bottom h3{
@@ -855,6 +856,29 @@ form input {
   }
   .segundo-testimonio {
     display: block;
+  }
+
+  .bottom{
+    width: 60%;
+    margin-left: 40%;
+  }
+
+  .titulo-bottom h3{
+    margin-left: 90%;
+  }
+
+  .detalle-carrito{
+    width: 30%;  
+  }
+  .importes-carrito{
+     width: 30%;
+  }
+  .contenedor-detalle{
+    justify-content: right;
+  }
+  
+  .end{
+    margin-left:40%;
   }
 }
 
