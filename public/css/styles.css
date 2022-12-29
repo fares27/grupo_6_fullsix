@@ -287,6 +287,15 @@ h3 {
 .segundo-testimonio {
   display: none;
 }
+
+.img-contenedor{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 70%;
+  height: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
 /* FIN HOME */
 
 /* FIN BODY */
