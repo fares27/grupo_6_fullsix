@@ -891,6 +891,11 @@ form input {
     justify-content: center;
   }
 
+  .producto{
+    width: 33%;
+    height: 100%;
+  }
+
   .clientes1,
   .clientes2,
   .clientes3 {
