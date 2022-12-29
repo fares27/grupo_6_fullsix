@@ -603,6 +603,17 @@ form input {
   padding: 10px;
 }
 
+.categorias p{
+  font-size: 14px;
+}
+
+.categorias strong{
+  font-size: 14.5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-left: 15px;
+}
+
 .cupon input {
   padding: 10px;
   background-color: gainsboro;
@@ -634,6 +645,14 @@ form input {
   width: 40px;
 }
 
+.x-borrar button{
+  background-color: transparent;
+  border: transparent;
+  color: red;
+  font-size: large;
+  font-weight: bold;
+}
+
 .detalle-carrito {
   display: flex;
   flex-direction: column;
@@ -644,6 +663,12 @@ form input {
 .detalle-carrito strong {
   border-bottom: gray solid 1px;
   padding: 5px;
+  font-size: 14.5px;
+  
+}
+
+.importes-carrito p{
+  font-size: 14.5px;
 }
 
 .importes-carrito {
