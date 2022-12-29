@@ -865,6 +865,31 @@ form input {
     display: flex;
   }
 
+  .primer-testimonio {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+  .primer-testimonio img {
+    width: 30%;
+    margin-left: 40px;
+  }
+  .testimonio-nombre-jugador {
+    order: 1;
+    margin-left: 60%;
+  }
+
+  .testimonio-descripcion-jugador {
+    order: 2;
+    text-align: center;
+    margin-top: 11%;
+    font-size: x-large;
+  }
+  .contenedor-descripcion {
+    display: flex;
+    flex-flow: row wrap-reverse;
+  }
+
   footer {
     display: flex;
     flex-direction: row;
