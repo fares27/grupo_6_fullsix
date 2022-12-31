@@ -815,7 +815,8 @@ hr {
   .mensual button:hover,
   .semestral button:hover,
   .end button:hover,
-  .cupon button:hover {
+  .cupon button:hover,
+  .boton-producto button:hover {
     box-shadow: 0px 0px 10px rgba(100, 100, 100, 1);
   }
 
@@ -870,10 +871,13 @@ hr {
     display: flex;
     flex-direction: row;
   }
+  .clientes1 img {
+    padding-bottom: 20px;
+  }
   .contenedor-como-ayudar p {
     order: 2;
     display: flex;
-    margin-top: 15px;
+    margin-top: 30px;
     font-size: x-large;
     margin-left: 30px;
     text-align: left;
