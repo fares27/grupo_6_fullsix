@@ -877,7 +877,7 @@ hr {
   .contenedor-como-ayudar p {
     order: 2;
     display: flex;
-    margin-top: 30px;
+    align-items: center;
     font-size: x-large;
     margin-left: 30px;
     text-align: left;
@@ -910,9 +910,12 @@ hr {
     border-bottom: 7px solid var(--verde-claro);
     padding-bottom: 17px;
   }
+  .contenedor-img-testimonio {
+    display: flex;
+  }
   .primer-testimonio img {
-    width: 30%;
-    margin-left: 40px;
+    width: 80%;
+    margin: auto;
   }
   .testimonio-nombre-jugador {
     order: 1;
@@ -929,14 +932,18 @@ hr {
     display: flex;
     flex-flow: row wrap-reverse;
     justify-content: right;
+    width: 100%;
+  }
+  .contendor-img-testimonio2 {
+    display: flex;
   }
   .segundo-testimonio {
     display: flex;
+    margin-top: 40px;
   }
   .segundo-testimonio img {
-    width: 30%;
-    margin-left: 40px;
-    margin-top: 40px;
+    width: 80%;
+    margin: auto;
   }
   .testimonio-nombre-entrenadora {
     order: 1;
