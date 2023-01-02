@@ -78,3 +78,8 @@ https://assessport.com/psicologia-deportiva/
 https://www.tuterapia.com.ar/ 
 https://sanamenteonline.com/Beneficios_pac 
 https://lagasca.es/psicologos/deportivo/ 
+
+
+LINK al tablero de Trello donde llevamos la distribución de las tareas:
+
+https://trello.com/b/xPBIdHkm/fullsix
