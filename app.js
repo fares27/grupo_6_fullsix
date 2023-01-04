@@ -5,6 +5,8 @@ const app = express();
 // Crear el path hacia la carpeta Public
 const publicPath = path.resolve(__dirname, "./public");
 
+
+// MIDDLEWARES //
 // Establecer como carpeta Publica - Public
 app.use(express.static(publicPath));
 
