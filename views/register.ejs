@@ -1,27 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <!-- Fonts Family -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<%- include("./partials/head") %>
 
-  <!-- Iconos -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-
-  <!-- Estilos -->
-  <link href="/css/styles.css" rel="stylesheet">
-
- <!-- FAVICON -->
- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
- <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FullSix</title>
-</head>
 
 <body>
 
@@ -54,65 +35,25 @@
   </header>
   <script src="https://kit.fontawesome.com/6cd48854d2.js" crossorigin="anonymous"></script>
 
+  <main>
 
-  <div class="contenedor">
-
-    <div class="top">
-
-      <h3>Carrito de compras</h3>
-
+    <div class="form-contenedor">
+      <form action="/login" method="POST">
+        <h4 class="titulo-registrate">¿No tenés cuenta? Registrate</h4>
+        <div class="form-ingresa">
+          <input type="text" name="nombre" placeholder="Nombre" required minlength="5" maxlength="25"
+            pattern="[A-Za-z]+" title="Solo letras">
+          <input type="email" name="email" placeholder="E-mail" required>
+          <input type="password" name="contraseña" placeholder="Contraseña" required minlength="8" maxlength="15"
+            pattern="[A-Za-z0-9]+" title="Letras y números. Tamaño mínimo: 8. Tamaño máximo: 15">
+          <div class="form-leyenda">
+            <label>¿Ya estás registrado? <a href="/login">Ingresá aquí</a></label>
+          </div>
+          <div class="contenedor-boton-ingresa">
+            <button class="boton-ingresa" type="submit">Registrarme</button>
+          </div>
+      </form>
     </div>
-
-    <div class="categorias">
-
-      <strong>Producto</strong>
-      <strong>Cantidad</strong>
-      <strong>Precio</strong>
-      <strong>Eliminar</strong>
-
-    </div>
-
-    <hr>
-
-    <div class="categorias">
-      <p>Plan mensual</p>
-      <input class="cantidad" type="number">
-      <p>$15.125</p>
-      <div class="x-borrar">
-        <button class="buttonClass" type="reset">X</button>
-        </div>
-    </div>
-
-    <div class="cupon">
-      <input type="text" placeholder="Código de cupón">
-      <button>Aplicar Cupón</button>
-    </div>
-
-    <div class="bottom">
-      <h3 class="titulo-bottom">Total del carrito </h3>
-    </div>
-
-    <div class="contenedor-detalle">
-      <div class="detalle-carrito">
-        <strong>Subtotal</strong>
-        <strong>IVA</strong>
-        <strong>Total</strong>
-      </div>
-
-      <div class="importes-carrito">
-        <p>$12.500</p>
-        <p>$2.625</p>
-        <p>$15.125</p>
-      </div>
-    </div>
-
-    <div class="end">
-
-      <button>Finalizar Compra</button>
-
-    </div>
-  </div>
-
 
   </main>
 

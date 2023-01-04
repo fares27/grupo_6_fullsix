@@ -1,84 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Fonts Family -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Iconos -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      rel="stylesheet"
-    />
+  <%- include("./partials/head") %>
 
-    <!-- Estilos -->
-    <link href="/css/styles.css" rel="stylesheet" />
-
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FullSix</title>
-  </head>
-
- <!-- FAVICON -->
- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
- <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-
-
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FullSix</title>
-</head>
-
-<body>
-  <header>
-    <!-- <nav><input placeHolder="buscar productos,marcas" type="nav"></nav> -->
-    <navbar>
-      <div class="nav">
-        <div class="logo">
-          <a href="/"><img src="/img/FULL SIX 6.png" alt="Logo FullSix" width="100%" /></a>
+  <body>
+    <header>
+      <!-- <nav><input placeHolder="buscar productos,marcas" type="nav"></nav> -->
+      <navbar>
+        <div class="nav">
+          <div class="logo">
+            <a href="/"
+              ><img src="/img/FULL SIX 6.png" alt="Logo FullSix" width="100%"
+            /></a>
+          </div>
+          <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul class="menu">
+            <li type="none"><a href="/">Inicio</a></li>
+            <li type="none"><a href="/#clientes">Clientes</a></li>
+            <li type="none"><a href="/#comofunciona">¿Cómo funciona?</a></li>
+            <li type="none">
+              <a href="/productDetail">Servicios y Tarifas</a>
+            </li>
+            <li type="none"><a href="">Contacto</a></li>
+          </ul>
+          <ul class="register-menu">
+            <button><a href="/login">Ingresar</a></button>
+            <button><a href="/register">Registrarme</a></button>
+            <button>
+              <a href="/productCart"
+                ><i class="fa-sharp fa-solid fa-cart-shopping"></i
+              ></a>
+            </button>
+          </ul>
         </div>
-        <div class="burger-menu">
-          <i class="fas fa-bars"></i>
-        </div>
-        <ul class="menu">
-          <li type="none"><a href="/">Inicio</a></li>
-          <li type="none"><a href="/#clientes">Clientes</a></li>
-          <li type="none"><a href="/#comofunciona">¿Cómo funciona?</a></li>
-          <li type="none"><a href="/productDetail">Servicios y Tarifas</a></li>
-          <li type="none"><a href="">Contacto</a></li>
-        </ul>
-        <ul class="register-menu">
-          <button><a href="/login">Ingresar</a></button>
-          <button><a href="/register">Registrarme</a></button>
-          <button>
-            <a href="/productCart"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></button>
-        </ul>
-      </div>
-    </navbar>
-  </header>
+      </navbar>
+    </header>
     <main>
       <section>
         <article class="header-contenedor">
           <div class="titulo-index">
             <img
-            class="img-logo-fullsix"
-            src="/img/FULL SIX 6.png"
-            alt="Logo Full Six"
-          />
+              class="img-logo-fullsix"
+              src="/img/FULL SIX 6.png"
+              alt="Logo Full Six"
+            />
             <h1>TRABAJÁ CON NOSOTROS Y ENTRENÁ TU MENTE</h1>
           </div>
           <div class="foto-home">
-            <img class="img-foto-home" src="/img/Home.png" alt="Gente en terapia" width="100%" />
+            <img
+              class="img-foto-home"
+              src="/img/Home.png"
+              alt="Gente en terapia"
+              width="100%"
+            />
           </div>
         </article>
       </section>
       <a name="clientes"></a>
-      <h2 class="h2-clientes"><strong>¿Quiénes son nuestros clientes?</strong></h2>
+      <h2 class="h2-clientes">
+        <strong>¿Quiénes son nuestros clientes?</strong>
+      </h2>
       <section class="div-clientes">
         <article class="clientes1">
           <img src="/img/Deportistas.png" alt="deportistas" width="100%" />
@@ -124,19 +106,31 @@
             </div>
           </div>
           <div class="pago">
-            <img class="imagen-pago-mobile" src="/img/pago-mobile.png" alt="pago" width="100%" />
-            <img class="imagen-pago-desktop" src="/img/pago tarjeta.png" alt="pago">
+            <img
+              class="imagen-pago-mobile"
+              src="/img/pago-mobile.png"
+              alt="pago"
+              width="100%"
+            />
+            <img
+              class="imagen-pago-desktop"
+              src="/img/pago tarjeta.png"
+              alt="pago"
+            />
           </div>
           <div class="segundo-paso">
             <h1 class="numero-segundo-paso">2</h1>
             <div class="segundo-paso-carta">
               <h3>SEGUNDO PASO</h3>
               <p>Coordiná y llevá a cabo tus consultas donde sea que estés</p>
-              <img src="/img/segundo-paso.png" alt="Segundo paso" width="100%" />
+              <img
+                src="/img/segundo-paso.png"
+                alt="Segundo paso"
+                width="100%"
+              />
             </div>
           </div>
         </div>
-
       </article>
       <article class="nuestros-planes">
         <h2><strong>Conocé nuestros planes</strong></h2>
@@ -152,7 +146,9 @@
               <p>Duracion: 60-90 min</p>
             </div>
             <div class="boton-producto">
-              <button><strong><a href="/productCart">Contratar</a></strong></button>
+              <button>
+                <strong><a href="/productCart">Contratar</a></strong>
+              </button>
             </div>
           </div>
           <div class="mensual-home">
@@ -166,7 +162,9 @@
               <p>Duracion: 1 mes</p>
             </div>
             <div class="boton-producto">
-              <button><strong><a href="/productCart">Contratar</a></strong></button>
+              <button>
+                <strong><a href="/productCart">Contratar</a></strong>
+              </button>
             </div>
           </div>
           <div class="semestral-home">
@@ -180,7 +178,9 @@
               <p>Duracion: 6 meses</p>
             </div>
             <div class="boton-producto">
-              <button><strong><a href="/productCart">Contratar</a></strong></button>
+              <button>
+                <strong><a href="/productCart">Contratar</a></strong>
+              </button>
             </div>
           </div>
         </div>
@@ -195,10 +195,10 @@
         <div class="primer-testimonio">
           <div class="contenedor-img-testimonio">
             <img
-            class="img-testimonio"
-            src="/img/primer_testimonio.jpg"
-            alt="Jugador de futbol sentado en una pelota"
-          />
+              class="img-testimonio"
+              src="/img/primer_testimonio.jpg"
+              alt="Jugador de futbol sentado en una pelota"
+            />
           </div>
 
           <div class="contenedor-descripcion">
@@ -217,10 +217,10 @@
         <div class="segundo-testimonio">
           <div class="contendor-img-testimonio2">
             <img
-            class="img-testimonio"
-            src="/img/segundo-testimonio.jpg"
-            alt="Atleta corriendo"
-          />
+              class="img-testimonio"
+              src="/img/segundo-testimonio.jpg"
+              alt="Atleta corriendo"
+            />
           </div>
 
           <div class="contenedor-descripcion">
@@ -237,9 +237,9 @@
               práctica y comprensible para los chicos. Considero que como
               entrenadores también nos puede ayudar mucho en la enseñanza del
               tenis. Por todo ello les recomiendo que si quieren introducir la
-              psicología deportiva y el entrenamiento mental en su entrenamiento,
-              aconsejo que se contacten con Manu porque les será de muchísima
-              ayuda.»
+              psicología deportiva y el entrenamiento mental en su
+              entrenamiento, aconsejo que se contacten con Manu porque les será
+              de muchísima ayuda.»
             </p>
           </div>
         </div>
