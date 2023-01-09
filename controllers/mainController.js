@@ -22,4 +22,11 @@ productDetail: (req, res) => {
     res.render("./products/productDetail");
 },
 
+productLoad: (req, res) => {
+    res.render("./products/productLoad");
+},
+
+productEdit: (req, res) => {
+    res.render("./products/productEdit");
+},
 }

@@ -732,6 +732,73 @@ hr {
 
 /* FIN PRODUCT CART */
 
+
+/* PRODUCT LOAD */
+
+
+.boton-carga {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 50px;
+  padding-left: 50px;
+  background-color: var(--verde-oscuro);
+  border-radius: 12px;
+  border: 0;
+  display: flex;
+  font-size: 18px;
+}
+
+.contenedor-boton-carga {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7px;
+  margin-top: 20;
+}
+
+form textarea {
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  border: white;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 90%;
+  height: 200px;
+  outline: none;
+  margin-left: 5%;
+  resize:none;
+  margin-top: 5px;
+}
+
+.input-form-load{
+  margin-top:10px;
+}
+
+.contenedor-categoria {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+  font-size: 12px;
+}
+
+.label-form-load {
+  margin-left: 15px;
+} 
+
+.form-load {
+    background-color: var(--verde-claro);
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    border-radius: 35px;
+    padding: 5px;
+  }
+
+/* FIN PRODUCT LOAD */
+
+
 /*  Tablet */
 @media (min-width: 500px) {
   .titulo-index h1 {
@@ -805,12 +872,22 @@ hr {
     margin-left: 30%;
     margin-right: 30%;
   }
+
+  .contenedor-categoria {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    width: 50%;
+    font-size: 14px;
+  }
+ 
 }
 
 /*  Escritorio */
 @media (min-width: 768px) {
   .register-menu button:hover,
   .boton-ingresa:hover,
+  .boton-carga:hover,
   .inicial button:hover,
   .mensual button:hover,
   .semestral button:hover,
@@ -1117,5 +1194,15 @@ hr {
   .form-contenedor {
     margin-left: 30%;
     margin-right: 30%;
+  }
+
+  .form-load {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .contenedor-categoria {
+    width: 60%;
+    font-size: 16px;
   }
 }
