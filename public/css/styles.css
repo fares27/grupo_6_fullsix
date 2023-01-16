@@ -533,14 +533,14 @@ form input {
   height: 50%;
 }
 
-.boton-producto {
+.boton-producto, .boton-producto-inicial, .boton-producto-semestral, .boton-producto-mensual {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
   margin-top: 20px;
 }
 
-.boton-producto button {
+.boton-producto button, .boton-producto-inicial button, .boton-producto-semestral button, .boton-producto-mensual button{
   background-color: white;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -549,6 +549,18 @@ form input {
   border-radius: 15px;
   border: 0;
   font-size: medium;
+}
+
+.boton-producto-inicial button a{
+  color: var(--verde-oscuro);
+}
+
+.boton-producto-mensual button a{
+  color: var(--gris-verdoso);
+}
+
+.boton-producto-semestral button a{
+  color: var(--marron);
 }
 
 .inicial button {
