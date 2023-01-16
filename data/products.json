@@ -1,0 +1,16 @@
+[{"id":1,
+"name":"Plan Deportistas",
+"description":"Incluye una entrevista con un especialista, un plan detallado para todo el mes, videollamadas semanales, opiniones de expertos",
+"price":6839.07,
+"image":"plan1.png"},
+{"id":2,
+"name":"Plan Entrenadores",
+"description":"Incluye una entrevista con un especialista, un plan detallado para todo el mes, videollamadas semanales, opiniones de expertos",
+"price":5652.47,
+"image":"plan2.png"},
+{"id":3,
+"name":"Plan Familiares",
+"description":"Incluye una entrevista con un especialista, un plan detallado para todo el mes, videollamadas semanales, opiniones de expertos",
+"price":4175.38,
+"image":"plan3.png"}
+]
