@@ -749,6 +749,8 @@ hr {
 
 
 .boton-carga {
+  margin-top: 20px;
+  margin-bottom: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-right: 50px;
@@ -790,12 +792,13 @@ form textarea {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 50%;
+  width: 90%;
   font-size: 12px;
+  justify-content: space-between;
 }
 
 .label-form-load {
-  margin-left: 15px;
+  margin-left: 30px;
 } 
 
 .form-load {
@@ -889,7 +892,7 @@ form textarea {
     display: flex;
     flex-direction: row;
     text-align: left;
-    width: 50%;
+    width: 90%;
     font-size: 14px;
   }
  
@@ -1214,7 +1217,7 @@ form textarea {
   }
 
   .contenedor-categoria {
-    width: 60%;
+    width: 90%;
     font-size: 16px;
   }
 }
