@@ -12,12 +12,12 @@ router.get("/", mainController.index);
   
   router.get("/productCart", mainController.productCart);
   
-  router.get("/productDetail", mainController.productDetail);
+  router.get("/products", mainController.productDetail);
   
   router.get("/register", mainController.register);
   
-  router.get("/productLoad", mainController.productLoad);
+  router.get("/products/create", mainController.productLoad);
 
-  router.get("/productEdit", mainController.productEdit);
+  router.get("/products/:id/edit", mainController.productEdit);
 
 module.exports = router;
