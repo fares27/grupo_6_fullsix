@@ -13,9 +13,13 @@ app.use(express.static(publicPath));
 
 app.set("view engine", "ejs");
 
-
 // Rutas
 app.use(mainRouter);
+
+//Error 404
+app.use((req, res, next) => {
+  res.status(404).render('not-found')
+})
 
 
 // Poner a escuchar el servidor en el puerto indicado
