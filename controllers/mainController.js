@@ -29,4 +29,6 @@ productLoad: (req, res) => {
 productEdit: (req, res) => {
     res.render("./products/productEdit");
 },
+
+
 }
