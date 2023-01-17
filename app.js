@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
+const methodOverride = require ('method-override'); //Para poder usar los métodos PUT y DELETE
 
 const mainRouter = require("./routes/mainRouter")
 // Crear el path hacia la carpeta Public
@@ -12,6 +13,7 @@ const publicPath = path.resolve(__dirname, "./public");
 app.use(express.static(publicPath));
 
 app.set("view engine", "ejs");
+app.use(methodOverride('_method')); //Para poder pisar el method="POST" en el formulario por PUT y DELETE
 
 // Rutas
 app.use(mainRouter);
