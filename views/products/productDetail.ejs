@@ -12,104 +12,32 @@
 
     <h2 class="titulo-productDetail">Nuestros planes</h2>
     <main class="caja-main">
-      <!-- Plan Inicial -->
+      <% planes.forEach(plan => { %>
+      <!-- Planes -->
       <article class="producto">
         <div class="inicial">
-          <div class="precio-producto">
-            <p>ARS 1500</p>
-          </div>
-          <div class="titulo-producto">
-            <h3>Plan Inicial</h3>
-          </div>
-          <div class="duracion">
-            <p>Duracion: 60-90 minutos</p>
-          </div>
-          <div class="items-producto">
-            <ul>
-              <li type="none">Entrevista personal</li>
-              <li type="none">Análisis de situación</li>
-              <li type="none">Establecimiento de objetivos</li>
-              <li type="none">Orientación</li>
-              <li type="none">
-                Establecimiento de pautas de trabajo y comunicación
-              </li>
-            </ul>
-          </div>
-          <div class="boton-producto">
-            <button>Contratar</button>
-          </div>
+            <div class="precio-producto">
+              <p><%=plan.price %> ARS</p>
+            </div>
+            <div class="titulo-producto">
+              <h3><%=plan.name %></h3>
+            </div>
+            <div class="duracion">
+              <p>Duración: <%=plan.duration %></p>
+            </div>
+            <div class="items-producto">
+              <ul>
+                <% for( let index = 0; index < plan.description.length; index++ ) { %>
+                <li type="none"><%= plan.description[index] %></li>
+                <% } %>
+              </ul>
+            </div>
+            <div class="boton-producto">
+              <button>Contratar</button>
+            </div>
         </div>
       </article>
-      <!-- Plan Mensual -->
-      <article class="producto">
-        <div class="mensual">
-          <div class="precio-producto">
-            <p>ARS 3000</p>
-          </div>
-          <div class="titulo-producto">
-            <h3>Plan Mensual</h3>
-          </div>
-          <div class="duracion">
-            <p>Duracion: 1 mes</p>
-          </div>
-          <div class="items-producto">
-            <ul>
-              <li type="none">Planificación del entrenamiento mental</li>
-              <li type="none">
-                Seguimiento semanal del proceso a través de correo electrónico
-              </li>
-              <li type="none">
-                Seguimiento semanal del proceso a través de videollamada (1 vez
-                a la semana)
-              </li>
-              <li type="none">
-                Evaluación del proceso en entrenamientos y competición
-              </li>
-              <li type="none">
-                Trabajo en coordinación con el resto del equipo técnico
-              </li>
-            </ul>
-          </div>
-          <div class="boton-producto">
-            <button>Contratar</button>
-          </div>
-        </div>
-      </article>
-      <!-- Plan Semestral -->
-      <article class="producto">
-        <div class="semestral">
-          <div class="precio-producto">
-            <p>ARS 15000</p>
-          </div>
-          <div class="titulo-producto">
-            <h3>Plan Semestral</h3>
-          </div>
-          <div class="duracion">
-            <p>Duracion: 6 meses</p>
-          </div>
-          <div class="items-producto">
-            <ul>
-              <li type="none">Planificación del entrenamiento mental</li>
-              <li type="none">
-                Seguimiento semanal del proceso a través de correo electrónico
-              </li>
-              <li type="none">
-                Seguimiento semanal del proceso a través de videollamada (1 vez
-                a la semana)
-              </li>
-              <li type="none">
-                Evaluación del proceso en entrenamientos y competición
-              </li>
-              <li type="none">
-                Trabajo en coordinación con el resto del equipo técnico
-              </li>
-            </ul>
-          </div>
-          <div class="boton-producto">
-            <button>Contratar</button>
-          </div>
-        </div>
-      </article>
+      <% }) %>
     </main>
 
   <!-- FOOTER COMPARTIDO -->
