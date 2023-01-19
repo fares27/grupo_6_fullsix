@@ -1,25 +1,6 @@
 const path = require("path");
-
-let listadoPlanes = 
-    [{"id":1,
-    "name":"Plan Deportistas",
-    "description":["Incluye una entrevista con un especialista","Plan detallado para todo el mes", "Videollamadas semanales","opiniones de expertos"],
-    "price":6839.07,
-    "image":"plan1.png",
-    "duration":"60-90 minutos"},
-    {"id":2,
-    "name":"Plan Entrenadores",
-    "description":["Incluye una entrevista con un especialista","Plan detallado para todo el mes", "Videollamadas semanales","opiniones de expertos"],
-    "price":5652.47,
-    "image":"plan2.png",
-    "duration":"1 mes"},
-    {"id":3,
-    "name":"Plan Familiares",
-    "description": ["Incluye una entrevista con un especialista","Plan detallado para todo el mes", "Videollamadas semanales","opiniones de expertos"],
-    "price":4175.38,
-    "image":"plan3.png",
-    "duration":"6 meses"}
-    ]
+const fs = require("fs");
+const { create } = require("domain");
 
 
 module.exports = {
@@ -40,10 +21,17 @@ productCart: (req, res) => {
 },
 
 products: (req, res) => {
+    const listadoPlanesJson = fs.readFileSync(path.join(__dirname, '../data/products.json'));
+    const listadoPlanes = JSON.parse(listadoPlanesJson);
+
     res.render("./products/productDetail", {planes:listadoPlanes});
 },
 
 productDetail: (req, res) => {
+    
+    const listadoPlanesJson = fs.readFileSync(path.join(__dirname, '../data/products.json'));
+    const listadoPlanes = JSON.parse(listadoPlanesJson);
+
     let id = req.params.id;
 
     let planEncontrado = listadoPlanes.filter(plan => plan.id == id);
@@ -56,8 +44,33 @@ productLoad: (req, res) => {
 },
 
 productEdit: (req, res) => {
-    res.render("./products/productEdit");
+    let id = req.params.id;
+
+    let planEncontrado = listadoPlanes.filter(plan => plan.id == id);
+
+    res.render("./products/productEdit",{planes:planEncontrado});
 },
 
+productCreate: (req, res) => {
+
+    const listadoPlanesJson = fs.readFileSync(path.join(__dirname, '../data/products.json'));
+
+    const listadoPlanes = JSON.parse(listadoPlanesJson);
+
+    planToCreate = {
+        id: listadoPlanes[listadoPlanes.length-1].id + 1,
+        ...req.body
+    }
+
+    listadoPlanes.push(planToCreate)
+
+    console.log(listadoPlanes);
+    const newListadoPlanes = JSON.stringify(listadoPlanes);
+
+     fs.writeFileSync(path.join(__dirname, '../data/products.json'),newListadoPlanes,'');
+    
+  
+    res.redirect("/");
+}
 
 }

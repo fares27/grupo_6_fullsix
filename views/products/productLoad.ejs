@@ -13,35 +13,33 @@
   <main>
 
     <div class="form-load">
-      <form action="/login" method="POST">
+      <form action="/products" method="POST">
         <h4 class="titulo-registrate">Carga de Plan</h4>
             <div class="form-ingresa">
                 
-                <label class="label-form-load" for="nombre-producto">Nombre del plan</label>
-                <input class="input-form-load" type="text" name="nombre-producto" id="nombre-producto" placeholder="Nombre" required minlength="5" maxlength="25"
-                pattern="[A-Za-z]+" title="Solo letras">
+                <label class="label-form-load" for="name">Nombre del plan</label>
+                <input class="input-form-load" type="text" name="name" id="name" placeholder="Nombre" required>
                 
-                <label class="label-form-load" for="descripcion-producto">Descripcion del plan</label>
-                <textarea class="input-form-load" name="descripcion-producto" id="descripcion-producto" placeholder="Descripción" required></textarea>
+                <label class="label-form-load" for="description">Descripcion del plan</label>
+                <textarea class="input-form-load" name="description" id="description" placeholder="Descripción" required></textarea>
 
-                <label class="label-form-load" for="duracion-producto">Duración del plan</label>
-                <input class="input-form-load" type="text" name="duracion-producto" id="duracion-producto" placeholder="Duración" required minlength="5" maxlength="25"
-                pattern="[A-Za-z0-9]+">
+                <label class="label-form-load" for="duration">Duración del plan</label>
+                <input class="input-form-load" type="text" name="duration" id="duration" placeholder="Duración" required minlength="5" maxlength="25">
                 
-                <label class="label-form-load" for="foto-producto">Imagen del plan</label>
-                <input class="input-form-load" type="file" name="foto-producto" accept=".jpg">
+                <label class="label-form-load" for="image">Imagen del plan</label>
+                <input class="input-form-load" type="file" name="image" id="image" accept=".jpg">
 
                 
-                <label class="label-form-load" for="categoria-producto">Categoria del plan</label>
+                <label class="label-form-load" for="category">Categoria del plan</label>
                 <br></br>
                 <div class="contenedor-categoria">
-                <input  class="input-form-load" type="radio" name="categoria-producto" id="categoria-producto"  value="deportista">Deportistas
-                <input  class="input-form-load" type="radio" name="categoria-producto" id="categoria-producto"  value="entrenador">Entrenadores
-                <input  class="input-form-load" type="radio" name="categoria-producto" id="categoria-producto"  value="familia">Familiares de Deportistas
+                <input  class="input-form-load" type="radio" name="category" id="category"  value="deportista">Deportistas
+                <input  class="input-form-load" type="radio" name="category" id="category"  value="entrenador">Entrenadores
+                <input  class="input-form-load" type="radio" name="category" id="category"  value="familia">Familiares de Deportistas
                 </div>
                 <br></br>
-                <label class="label-form-load" for="precio-producto">Precio del plan</label>
-                <input  class="input-form-load" type="text" name="precio-producto" id="precio-producto" placeholder="Precio" required minlength="1" maxlength="15"
+                <label class="label-form-load" for="price">Precio del plan</label>
+                <input  class="input-form-load" type="text" name="price" id="price" placeholder="Precio" required minlength="1" maxlength="15"
                 pattern="[A-Za-z0-9]+" title="Solo números">
 
                 <div class="contenedor-boton-carga">
