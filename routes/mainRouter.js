@@ -15,22 +15,27 @@ const path = require('path');
 }*/
 
 // Vista a ejecutar en el Home
-router.get("/", mainController.index);
+router.get("/", mainController.index);  // HOME 
   
-  router.get("/login", mainController.login);
+  router.get("/login", mainController.login); // LOGIN USUARIO
   
-  router.get("/productCart", mainController.productCart);
-  
-  router.get("/products", mainController.products);
-  
-  router.get("/register", mainController.register);
-  
-  router.get("/products/create", mainController.productLoad);
+  router.get("/register", mainController.register); // REGISTRO DE USUARIO
 
-  router.post("/products", mainController.productCreate);
+  router.get("/productCart", mainController.productCart); // CARRITO DE COMPRAS
 
-  router.get("/products/:id/edit", mainController.productEdit);
+  router.get("/products/create", mainController.productFormLoad); // FORMULARIO DE CREACION DE PRODUCTO // CREATE GET
 
-  router.get("/products/:id/", mainController.productDetail);
+  router.post("/products", mainController.productCreate); // FORMULARIO DE ENVIO DE CREACION DE PRODUCTO // CREATE POST
 
+  router.get("/products", mainController.products); // LISTADO DE PLANES (PRODUCTOS) // READ ALL
+
+  router.get("/products/:id/", mainController.productDetail); //  LISTADO DE PLAN (PRODUCTO) // READ ONLY 
+
+  router.get("/products/:id/edit", mainController.productFormEdit); // FORMULARIO DE EDICION DE PRODUCTO // UPDATE GET
+
+  router.put("/products/:id/", mainController.productEdit); // FORMULARIO DE ENVIO DE EDICION DE PRODUCTO // UPDATE PUT
+
+  router.delete("/products/:id/", mainController.productDelete); // FORMULARIO DE ENVIO DE ORDEN DE ELIMINACION
+
+  
 module.exports = router;

@@ -21,10 +21,13 @@ productCart: (req, res) => {
 },
 
 products: (req, res) => {
+
     const listadoPlanesJson = fs.readFileSync(path.join(__dirname, '../data/products.json'));
     const listadoPlanes = JSON.parse(listadoPlanesJson);
 
-    res.render("./products/productDetail", {planes:listadoPlanes});
+    let listadoPlanesActivos = listadoPlanes.filter(plan => plan.state == 1);
+
+    res.render("./products/productDetail", {planes:listadoPlanesActivos});
 },
 
 productDetail: (req, res) => {
@@ -39,16 +42,20 @@ productDetail: (req, res) => {
     res.render("./products/productDetail", {planes:planEncontrado});
 },
 
-productLoad: (req, res) => {
+productFormLoad: (req, res) => {
     res.render("./products/productLoad");
 },
 
-productEdit: (req, res) => {
+productFormEdit: (req, res) => {
     let id = req.params.id;
+
+    const listadoPlanesJson = fs.readFileSync(path.join(__dirname, '../data/products.json'));
+    const listadoPlanes = JSON.parse(listadoPlanesJson);
 
     let planEncontrado = listadoPlanes.filter(plan => plan.id == id);
 
-    res.render("./products/productEdit",{planes:planEncontrado});
+    // console.log(planEncontrado);
+    res.render("./products/productEdit",{plan:planEncontrado});
 },
 
 productCreate: (req, res) => {
@@ -59,17 +66,65 @@ productCreate: (req, res) => {
 
     planToCreate = {
         id: listadoPlanes[listadoPlanes.length-1].id + 1,
-        ...req.body
+        ...req.body,
+        state: 1
     }
 
     listadoPlanes.push(planToCreate)
 
-    console.log(listadoPlanes);
+   // console.log(listadoPlanes);
     const newListadoPlanes = JSON.stringify(listadoPlanes);
 
      fs.writeFileSync(path.join(__dirname, '../data/products.json'),newListadoPlanes,'');
     
   
+    res.redirect("/");
+},
+
+productEdit: (req, res) => {
+
+    let id = req.params.id;
+
+    const listadoPlanesJson = fs.readFileSync(path.join(__dirname, '../data/products.json'));
+
+    const listadoPlanes = JSON.parse(listadoPlanesJson);
+
+    planToEdit = {
+        id: id,
+        ...req.body,
+        state: 1
+    }
+ 
+    console.log(planToEdit);
+    
+    const listadoPlanesActualizado = listadoPlanes.map(plan => plan.id == planToEdit.id ? planToEdit: plan );
+
+
+    const newListadoPlanesActualizado = JSON.stringify(listadoPlanesActualizado);
+
+    
+     fs.writeFileSync(path.join(__dirname, '../data/products.json'),newListadoPlanesActualizado,'');
+    
+    res.redirect("/");
+},
+
+productDelete: (req, res) => {
+    let id = req.params.id;
+
+    const listadoPlanesJson = fs.readFileSync(path.join(__dirname, '../data/products.json'));
+
+    const listadoPlanes = JSON.parse(listadoPlanesJson);
+
+    const planAActualizar = listadoPlanes.filter(plan => plan.id == id);
+
+    planAActualizar[0].state = 0;
+
+    const listadoPlanesActualizado = listadoPlanes.map(plan => plan.id == planAActualizar.id ? planAActualizar: plan );
+
+    const newListadoPlanesActualizado = JSON.stringify(listadoPlanesActualizado);
+    
+    fs.writeFileSync(path.join(__dirname, '../data/products.json'),newListadoPlanesActualizado,'');
+
     res.redirect("/");
 }
 

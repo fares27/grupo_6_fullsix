@@ -16,7 +16,7 @@ app.use(express.static(publicPath));
 app.set("view engine", "ejs");
 app.use(methodOverride('_method')); //Para poder pisar el method="POST" en el formulario por PUT y DELETE
 app.use(express.json());
-app.use(express.urlencoded({extended: true}));
+app.use(express.urlencoded({extended: false}));
 
 // Rutas
 app.use(mainRouter);
