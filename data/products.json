@@ -1,1 +1,32 @@
-[{"id":"1","name":"Plan Deportistas","description":"Incluye una entrevista con un especialista\r\nPlan detallado para todo el mes\r\nVideollamadas semanales\r\nOpiniones de expertos\r\nPlan detallado para todo el mes","duration":"60-90 minutos","image":"","category":"deportista","price":"6839.07","state":1},{"id":"2","name":"Plan Entrenadores","description":"Incluye una entrevista con un especialista\r\nPlan detallado para todo el mes\r\nVideollamadas semanales\r\nOpiniones de expertos\r\nPlan detallado para todo el mes","duration":"1 mes","image":"","category":"entrenador","price":"5652.47","state":1},{"id":3,"name":"Plan Familiares","description":"Incluye una entrevista con un especialista\nPlan detallado para todo el mes\nVideollamadas semanales\nOpiniones de expertos\nPlan detallado para todo el mes","duration":"6 meses","image":"plan3.png","category":"familia","price":4175.38,"state":1}]
+[
+    {
+        "id": "1",
+        "name": "Plan Deportistas",
+        "description": "Incluye una entrevista con un especialista\r\nPlan detallado para todo el mes\r\nVideollamadas semanales\r\nOpiniones de expertos\r\nPlan detallado para todo el mes",
+        "duration": "60-90 minutos",
+        "image": "",
+        "category": "deportista",
+        "price": "6839.07",
+        "state": 1
+    },
+    {
+        "id": "2",
+        "name": "Plan Entrenadores",
+        "description": "Incluye una entrevista con un especialista\r\nPlan detallado para todo el mes\r\nVideollamadas semanales\r\nOpiniones de expertos\r\nPlan detallado para todo el mes",
+        "duration": "1 mes",
+        "image": "",
+        "category": "entrenador",
+        "price": "5652.47",
+        "state": 1
+    },
+    {
+        "id": 3,
+        "name": "Plan Familiares",
+        "description": "Incluye una entrevista con un especialista\nPlan detallado para todo el mes\nVideollamadas semanales\nOpiniones de expertos\nPlan detallado para todo el mes",
+        "duration": "6 meses",
+        "image": "plan3.png",
+        "category": "familia",
+        "price": 4175.38,
+        "state": 1
+    }
+]

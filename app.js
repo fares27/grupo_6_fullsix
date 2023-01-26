@@ -5,6 +5,8 @@ const app = express();
 const methodOverride = require ('method-override'); //Para poder usar los métodos PUT y DELETE
 const fs = require("fs");
 const mainRouter = require("./routes/mainRouter")
+const productsRouter = require("./routes/productsRouter")
+const authRouter = require("./routes/authRouter")
 
 // Crear el path hacia la carpeta Public
 const publicPath = path.resolve(__dirname, "./public");
@@ -20,6 +22,8 @@ app.use(express.urlencoded({extended: false}));
 
 // Rutas
 app.use(mainRouter);
+app.use(productsRouter);
+app.use(authRouter);
 
 //Error 404. Tiene que ir desp de las rutas 
 app.use((req, res, next) => {
