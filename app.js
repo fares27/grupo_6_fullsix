@@ -1,3 +1,5 @@
+
+
 // REQUIRES DEL APP.JS
 const express = require("express");
 const path = require("path");
@@ -7,6 +9,12 @@ const fs = require("fs");
 const mainRouter = require("./routes/mainRouter")
 const productsRouter = require("./routes/productsRouter")
 const authRouter = require("./routes/authRouter")
+const logMiddleware = require('./public/Middlewares/logMiddleware');
+
+
+
+
+
 
 // Crear el path hacia la carpeta Public
 const publicPath = path.resolve(__dirname, "./public");
@@ -19,6 +27,9 @@ app.set("view engine", "ejs");
 app.use(methodOverride('_method')); //Para poder pisar el method="POST" en el formulario por PUT y DELETE
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
+app.use(logMiddleware);
+
+
 
 // Rutas
 app.use(mainRouter);
@@ -35,4 +46,3 @@ app.use((req, res, next) => {
 app.listen(3000, () => {
   console.log("Servidor corriendo en el puerto 3000");
 });
-
