@@ -9,5 +9,8 @@ module.exports = {
     
     register: (req, res) => {
         res.render("./users/register");
+    },
+    registerUser: (req, res) => {
+        res.render("./users/register");
     }
 }
