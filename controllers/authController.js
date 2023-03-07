@@ -13,6 +13,7 @@ module.exports = {
         res.render("./users/login");
     },
     postLogin: (req, res) => {
+        console.log(req.body);
         const { email, password} = req.body;
         const loggedUser = users.find((user) => user.email === email);
 
@@ -38,6 +39,7 @@ module.exports = {
     postRegister: (req, res) => {
         let newUser = users;
         let userData = {
+            'id' : users[users.length - 1].id + 1,
             'firstName': req.body.firstname,
             'lastName': req.body.lastname,
             'password': bcrypt.hashSync(req.body.password, 10),
