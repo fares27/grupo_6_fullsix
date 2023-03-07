@@ -417,7 +417,7 @@ form input {
 
 .checkbox-recordarme {
   flex-direction: row;
-  margin-left: 5px;
+  margin-left: 30px;
   text-align: center;
 }
 
@@ -462,6 +462,10 @@ form input {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+.contenedor-foto-perfil label{
+  padding: 30px;
 }
 
 /* FIN LOGIN / REGISTER */

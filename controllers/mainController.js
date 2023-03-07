@@ -5,9 +5,8 @@ const { create } = require("domain");
 
 module.exports = {
 index: (req, res) => {
-    console.log(req.session.email);
-    const emailCookie = req.session.email;
-    if(emailCookie){
+    const emailSession = req.session.email;
+    if(emailSession){
         res.render("index", {email: emailSession});
     }else{
         res.render('index', {email: ''})

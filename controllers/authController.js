@@ -37,9 +37,6 @@ module.exports = {
 
         console.log('inicio exitoso') //esto desp se borra
         return res.redirect('/'); //cuando existe y la contra es correcta entra aca
-
-
-
     },
 
 
