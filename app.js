@@ -12,10 +12,6 @@ const authRouter = require("./routes/authRouter")
 const logMiddleware = require('./public/Middlewares/logMiddleware');
 
 
-
-
-
-
 // Crear el path hacia la carpeta Public
 const publicPath = path.resolve(__dirname, "./public");
 
