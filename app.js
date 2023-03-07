@@ -10,7 +10,7 @@ const mainRouter = require("./routes/mainRouter")
 const productsRouter = require("./routes/productsRouter")
 const authRouter = require("./routes/authRouter")
 const logMiddleware = require('./public/Middlewares/logMiddleware');
-
+const session = require('express-session');
 
 // Crear el path hacia la carpeta Public
 const publicPath = path.resolve(__dirname, "./public");
@@ -24,6 +24,11 @@ app.use(methodOverride('_method')); //Para poder pisar el method="POST" en el fo
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(logMiddleware);
+app.use(session(
+  {
+    resave: true,
+    saveUninitialized: true,
+    secret: 'Nuestro mensaje secreto'}));
 
 
 
