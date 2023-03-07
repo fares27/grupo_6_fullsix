@@ -13,8 +13,8 @@ module.exports = {
         res.render("./users/login");
     },
     postLogin: (req, res) => {
-        console.log(req.body);
-        const { email, password} = req.body;
+
+        const { email, password, remember } = req.body;
         const loggedUser = users.find((user) => user.email === email);
 
         if (loggedUser) {
@@ -24,14 +24,24 @@ module.exports = {
                 console.log('contra incorrecta'); //esto desp se borra
                 return res.redirect('/login')  //cuando existe y la contra es incorrecta
             }
-        }else {
+        } else {
             console.log('mail no registrado') //esto desp se borra
-                return res.redirect('/login'); //cuando no esta registrado el mail, entra acá
-            }
-            console.log('inicio exitoso') //esto desp se borra
-            return res.redirect('/'); //cuando existe y la contra es correcta entra aca
-        },
-    
+            return res.redirect('/login'); //cuando no esta registrado el mail, entra acá
+        }
+
+        if (remember) {
+            res.cookie("email", loggedUser.email, {maxAge: 60*60*24*31*1000})
+        }
+
+        req.session.email = loggedUser.email;
+
+        console.log('inicio exitoso') //esto desp se borra
+        return res.redirect('/'); //cuando existe y la contra es correcta entra aca
+
+
+
+    },
+
 
     register: (req, res) => {
         res.render("./users/register");
@@ -39,7 +49,7 @@ module.exports = {
     postRegister: (req, res) => {
         let newUser = users;
         let userData = {
-            'id' : users[users.length - 1].id + 1,
+            'id': users[users.length - 1].id + 1,
             'firstName': req.body.firstname,
             'lastName': req.body.lastname,
             'password': bcrypt.hashSync(req.body.password, 10),

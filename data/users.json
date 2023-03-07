@@ -270,62 +270,27 @@
         "image": "/images/avatars/kipa.jpg"
     },
     {
-        "firstName": "jazmin",
-        "lastName": "farias",
-        "password": "jazmin123",
-        "email": "prueba@gmail.com"
-    },
-    {
-        "firstName": "Marcos",
-        "lastName": "Dauta",
-        "password": "marcos123",
-        "email": "marcos_d@gmail.com"
-    },
-    {
-        "firstName": "amirr",
-        "lastName": "bartilone",
-        "password": "amir1233",
-        "email": "amirb@gmail.com"
-    },
-    {
-        "firstName": "amirrrr",
-        "lastName": "bartilone",
-        "password": "aansjak322",
-        "email": "amsasirb@gmail.com"
-    },
-    {
-        "firstName": "agustina",
-        "lastName": "perez",
-        "password": "agustina12",
-        "email": "aperez@gmail.com"
-    },
-    {
-        "firstName": "bycrypt",
-        "lastName": "prueba",
-        "password": "$2a$10$ae8CfFsmiZKWOqX7pTzG0.tutU0riVKJxLsf0I3gGQoPUTszbTbzG",
-        "email": "bicrypt@gmail.com"
-    },
-    {
-        "firstName": "fileprueba",
-        "lastName": "prueba",
-        "password": "$2a$10$z.cNJiPnya3IukJWTSqiuexwyL.uBm0BrhTHr6Oq2r97yVjZH4V62",
-        "email": "fileprueba@gmail.com",
-        "image": {
-            "fieldname": "image",
-            "originalname": "img-laptop-lenovo.jpg",
-            "encoding": "7bit",
-            "mimetype": "image/jpeg",
-            "destination": "./public/img/avatars",
-            "filename": "1678151571170_img_.jpg",
-            "path": "public\\img\\avatars\\1678151571170_img_.jpg",
-            "size": 189851
-        }
-    },
-    {
+        "id": 31,
         "firstName": "aaaaaaaaa",
         "lastName": "bbbbbbb",
         "password": "$2a$10$H0uys8z1M2kqUz9JU5xbvuqsudr5BUiyXW3QtZ1YO.ikyWPAdNu02",
         "email": "cccccc@gmail.com",
         "image": "public\\img\\avatars\\1678151952431_img_.jpg"
+    },
+    {
+        "id": 32,
+        "firstName": "Juan",
+        "lastName": "Aguirre",
+        "password": "$2a$10$O5.7LozMOWK3PUyYIMOjIe/ZbqxeOCLw4wTUF/g40DNOo/oTLdCQm",
+        "email": "jaguirre@gmail.com",
+        "image": "public\\img\\avatars\\1678210305865_img_.png"
+    },
+    {
+        "id": 33,
+        "firstName": "Manuel",
+        "lastName": "Cativa",
+        "password": "$2a$10$KNE5LGH/VL30ORlSArJS2.lpC9zlLJRiaUIbvpmSZvQT.dOvlUCo.",
+        "email": "jcativa@gmail.com",
+        "image": "public\\img\\avatars\\1678210728166_img_.png"
     }
 ]

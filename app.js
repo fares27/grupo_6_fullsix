@@ -11,6 +11,7 @@ const productsRouter = require("./routes/productsRouter")
 const authRouter = require("./routes/authRouter")
 const logMiddleware = require('./public/Middlewares/logMiddleware');
 const session = require('express-session');
+const cookieParser = require('cookie-parser');
 
 // Crear el path hacia la carpeta Public
 const publicPath = path.resolve(__dirname, "./public");
@@ -28,8 +29,8 @@ app.use(session(
   {
     resave: true,
     saveUninitialized: true,
-    secret: 'Nuestro mensaje secreto'}));
-
+    secret: '$3cr3T0 Fu11 $1x'}));
+app.use(cookieParser());
 
 
 // Rutas
