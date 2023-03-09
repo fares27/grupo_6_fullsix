@@ -45,13 +45,18 @@ module.exports = {
     },
     postRegister: (req, res) => {
         let newUser = users;
+        const defaultImagePath = 'public\\img\\avatars\\default-image.jpg';
+        let image = defaultImagePath;
+        if (req.file !== undefined) {
+          image = req.file.path;
+        }
         let userData = {
             'id': users[users.length - 1].id + 1,
             'firstName': req.body.firstname,
             'lastName': req.body.lastname,
             'password': bcrypt.hashSync(req.body.password, 10),
             'email': req.body.email,
-            'image': req.file.path
+            'image': image
 
         };
         console.log(userData);
