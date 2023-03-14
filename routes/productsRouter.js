@@ -1,7 +1,7 @@
 const express = require("express");
 
 const router = express.Router();
-const productsController = require("../controllers/productsController")
+const productsController = require("../controllers/productsController");
 const path = require("path");
 
 // MIDDLEWARE PARA VERIFICAR SI EL USUARIO ESTA AUTENTICADO
