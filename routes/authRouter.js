@@ -21,9 +21,16 @@ const storage = multer.diskStorage({
 
 const uploadFile = multer({ storage });
 
+//MIDDLEWARE PARA EVITAR ENTRAR A LOGIN SI YA EXISTE UN SESSION
+const avoidLoginAccess = (req, res, next) => {
+   if (req.session.email) {
+     return res.redirect('/');
+   }
+   next();
+ }
 // RUTAS
 
-router.get("/login", authController.login); // LOGIN USUARIO
+router.get("/login", avoidLoginAccess, authController.login); // LOGIN USUARIO
 
 router.post("/login", authController.postLogin);
 

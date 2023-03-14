@@ -4,8 +4,15 @@ const router = express.Router();
 const productsController = require("../controllers/productsController")
 const path = require("path");
 
+// MIDDLEWARE PARA VERIFICAR SI EL USUARIO ESTA AUTENTICADO
+const authMiddleware = (req, res, next) => {
+    if (!req.session.email) {
+      return res.redirect('/login');
+    }
+    next();
+  };
 
-router.get("/productCart", productsController.productCart); // CARRITO DE COMPRAS
+router.get("/productCart", authMiddleware,productsController.productCart); // CARRITO DE COMPRAS
 
 router.get("/products/create", productsController.productFormLoad); // FORMULARIO DE CREACION DE PRODUCTO // CREATE GET
 
