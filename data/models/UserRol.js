@@ -22,13 +22,10 @@ module.exports = (sequelize, dataTypes) => {
     }
     const UserRol = sequelize.define(alias, cols, config); 
 
-    UserRol.associate = function (models) {
-        UserRol.belongsToMany(models.User, {
-            as: "user",
-            through: 'user_rol',
-            foreignKey: 'id_rol',
-            otherKey: 'id',
-            timestamps: false
+    UserRol.associate = function(models) {
+        UserRol.hasMany(models.User, { // models.Movies -> Movie es el valor de alias en movie.js
+            as: "users", // El nombre del modelo pero en plural
+            foreignKey: "id_rol"
         })
     }
 
