@@ -37,7 +37,7 @@ module.exports = (sequelize, dataTypes) => {
     const User = sequelize.define(alias, cols, config); 
 
     User.associate = function (models) {
-        User.belongsTo(models.UserRol, { // models.Genre -> Genres es el valor de alias en genres.js
+        User.belongsTo(models.UserRol, { 
             as: "userRol",
             foreignKey: "id"
         })
