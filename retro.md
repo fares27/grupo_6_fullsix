@@ -1,4 +1,4 @@
-Realizamos la retrospectiva el día 30/12/2022
+Realizamos la retrospectiva el día 17/03/2023
 
 Participantes: Marcos Daut, Jazmin Farias, Amir Bartilone, Laila 
 
@@ -6,7 +6,7 @@ Obtuvimos las siguientes conclusiones:
 
 Debemos comenzar a hacer: 
 
-    * Separar las tareas y definir fecha de finalización de cada una y sus dependencias al principio del sprint: realizar algo similar a una Planning, para organizarnos mejor y visualizar más fácil las dependencias y riesgos.
+    * Separar las tareas y definir fecha de finalización de cada una y sus dependencias al principio del sprint: realizar algo similar a una Planning, para organizarnos mejor y visualizar más fácil las dependencias y riesgos. Asegurarnos de que cada uno tenga una tarea definida para una mejor distribución del trabajo.
 
 Debemos hacer más:
 
@@ -21,6 +21,7 @@ Debemos continuar haciendo:
 Debemos hacer menos:
 
     *Dejar la mayoría del trabajo o correcciones para los últimos días del sprint.
+    *Estudiar los contenidos a ultimo momento porque nos atrasa en lo que reflejamos en el proyecto
 
 Debemos dejar de hacer:
 
