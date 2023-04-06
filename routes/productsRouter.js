@@ -30,5 +30,6 @@ router.delete("/products/:id/", productsController.productDelete); // FORMULARIO
 
 router.get("/productsAll", productsController.productAll); // Prueba de traerme todos los productos
 
+router.get("/cartsAll", productsController.cartAll); // Prueba de traerme todos los productos
 
 module.exports = router;

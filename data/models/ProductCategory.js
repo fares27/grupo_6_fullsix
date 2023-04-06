@@ -1,6 +1,6 @@
 module.exports = (sequelize, dataTypes) => {
     
-    let alias = 'UserRol';
+    let alias = 'ProductCategory';
     
     let cols = {
         id: {
@@ -16,21 +16,21 @@ module.exports = (sequelize, dataTypes) => {
     };
     
     let config = {
-        timestamps: false,
+        timestamps: true,
         createdAt: false,
         updatedAt: false,
         deletedAt: false,
-        tableName: "user_rol",
+        tableName: "product_category",
         underscore: true
     }
-    const UserRol = sequelize.define(alias, cols, config); 
+    const ProductCategory = sequelize.define(alias, cols, config); 
 
-    UserRol.associate = function(models) {
-        UserRol.hasMany(models.User, { // models.Movies -> Movie es el valor de alias en movie.js
-            as: "users", // El nombre del modelo pero en plural, se usaria en el controlador
-            foreignKey: "id_rol"
+    ProductCategory.associate = function(models) {
+        ProductCategory.hasMany(models.Product, { // models.Movies -> Movie es el valor de alias en movie.js
+            as: "products", // El nombre del modelo pero en plural, se usaria en el controlador
+            foreignKey: "id_category"
         })
     }
 
-    return UserRol
+    return ProductCategory
 };

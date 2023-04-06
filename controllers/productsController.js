@@ -1,6 +1,12 @@
 const path = require("path");
 const fs = require("fs");
 const { create } = require("domain");
+const db = require ('../data/models');
+const Product = db.Product;
+const ProductCategory = db.ProductCategory;
+const Cart = db.Cart;
+const ProductCart = db.ProductCart;
+
 
 module.exports = {
 
@@ -116,8 +122,22 @@ productDelete: (req, res) => {
     res.redirect("/");
 },
 
-productAll: (req, res) => {
-    res.redirect("/");
+productAll:  (req, res) => {
+    db.Product.findAll({
+        include: [{association: 'productCategory'}]
+    })
+    .then(productos => {
+        res.json(productos);
+    })
+},
+
+cartAll: (req, res) => {
+    db.Cart.findAll({
+        include: [{association: 'user'}, {association: 'productCarts'}]
+    })
+    .then(carts => {
+        res.json(carts);
+    })
 }
 
 }

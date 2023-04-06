@@ -22,12 +22,7 @@ module.exports = (sequelize, dataTypes) => {
         password: {
             type: dataTypes.STRING(100),
             allowNull: false
-        },
-     //   image: {
-     //       type: dataTypes.STRING(100),
-     //       allowNull: true
-     //   },
-        id_rol: dataTypes.BIGINT(10).UNSIGNED //No hace falta crear esta columna. 
+        }
     };
     let config = {
         timestamps: false,
@@ -43,8 +38,13 @@ module.exports = (sequelize, dataTypes) => {
         User.belongsTo(models.UserRol, { 
             as: "userRol", //Se usa en en controlador
             foreignKey: "id_rol"
+        }),
+        User.hasMany(models.Cart, { 
+            as: "carts", // El nombre del modelo pero en plural, se usaria en el controlador
+            foreignKey: "id_user"
         })
     }
+
 
     return User
 };
