@@ -114,6 +114,10 @@ productDelete: (req, res) => {
     fs.writeFileSync(path.join(__dirname, '../data/products.json'),newListadoPlanesActualizado,'');
 
     res.redirect("/");
+},
+
+productAll: (req, res) => {
+    res.redirect("/");
 }
 
 }

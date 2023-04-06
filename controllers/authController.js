@@ -3,10 +3,14 @@ const fs = require("fs");
 const { create } = require("domain");
 const { json } = require("express");
 const bcrypt = require('bcryptjs'); //Para encriptar passwords
-
 const usersFilePath = path.join(__dirname, '../data/users.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, "utf8"));
+const db = require ('../data/models');
+const User = db.User;
+const UserRol = db.UserRol;
 
+// Para llamadas con COUNT, LIKE, MAX, etc.
+const Op = db.Sequelize.Op; 
 
 module.exports = {
     login: (req, res) => {
@@ -39,6 +43,14 @@ module.exports = {
         return res.redirect('/'); //cuando existe y la contra es correcta entra aca
     },
 
+    usuarioGetAll: (req, res) => {
+        db.User.findAll({
+            include: [{association: 'userRol'}]
+        })
+        .then(usuarios => {
+            res.json(usuarios);
+        })
+    },
 
     register: (req, res) => {
         res.render("./users/register");

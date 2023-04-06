@@ -28,5 +28,7 @@ router.put("/products/:id/", productsController.productEdit); // FORMULARIO DE E
 
 router.delete("/products/:id/", productsController.productDelete); // FORMULARIO DE ENVIO DE ORDEN DE ELIMINACION
 
+router.get("/productsAll", productsController.productAll); // Prueba de traerme todos los productos
+
 
 module.exports = router;

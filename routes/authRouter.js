@@ -38,4 +38,6 @@ router.get("/register", authController.register); // REGISTRO DE USUARIO
 
 router.post("/register", uploadFile.single('image'), authController.postRegister); // REGISTRO DE USUARIO -- CREACION DEL USUARIO
 
+router.get("/usuariosAll", authController.usuarioGetAll);
+
 module.exports = router;
