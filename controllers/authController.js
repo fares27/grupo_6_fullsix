@@ -45,7 +45,7 @@ module.exports = {
   // Si el usuario no existe, redirige a la página de inicio de sesión con un mensaje de error
   if (!user) {
     console.log("mail email")
-    return res.render('users/login', { error: 'El correo electrónico o la contraseña son incorrectos' });
+    return res.render('users/login', { error: 'El usuario no esta registrado' });
   }
 
   // Compara la contraseña ingresada con la contraseña almacenada en la base de datos
