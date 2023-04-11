@@ -54,7 +54,6 @@ module.exports = {
   // Si las contraseñas no coinciden, redirige a la página de inicio de sesión con un mensaje de error
   if (!match) {
     console.log('contraseña incorrecta')
-    console.log(req.body)
     return res.render('users/login', { error: 'El correo electrónico o la contraseña son incorrectos' });
   }else{
   console.log("inicio sesion")
