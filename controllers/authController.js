@@ -56,26 +56,40 @@ module.exports = {
         res.render("./users/register");
     },
     postRegister: (req, res) => {
-        let newUser = users;
-        const defaultImagePath = 'public\\img\\avatars\\default-image.jpg';
-        let image = defaultImagePath;
-        if (req.file !== undefined) {
-          image = req.file.path;
-        }
-        let userData = {
-            'id': users[users.length - 1].id + 1,
-            'firstName': req.body.firstname,
-            'lastName': req.body.lastname,
-            'password': bcrypt.hashSync(req.body.password, 10),
-            'email': req.body.email,
-            'image': image
+        // let newUser = users;
+        // const defaultImagePath = 'public\\img\\avatars\\default-image.jpg';
+        // let image = defaultImagePath;
+        // if (req.file !== undefined) {
+        // image = req.file.path;
+        // }
+        const _body = { 
+            first_name : req.body.firstname,
+            last_name: req.body.lastname,
+            email: req.body.email,
+            password: req.body.password,
+            id_rol: "150"
+        }    
 
-        };
-        console.log(userData);
-        newUser.push(userData);
+        User.create(_body)
+        .then(user =>{
+            res.redirect('/login');
+        })
+        // let userData = {
+        //     'id': users[users.length - 1].id + 1,
+        //     'firstName': req.body.firstname,
+        //     'lastName': req.body.lastname,
+        //     'password': bcrypt.hashSync(req.body.password, 10),
+        //     'email': req.body.email,
+        //     'image': image
 
-        fs.writeFileSync(usersFilePath, JSON.stringify(newUser, null, ''));
+        // };
+        // console.log(userData);
+        // newUser.push(userData);
 
-        res.redirect('/login');
+        // fs.writeFileSync(usersFilePath, JSON.stringify(newUser, null, ''));
+
+        // res.redirect('/login');
+
+
     }
 }
