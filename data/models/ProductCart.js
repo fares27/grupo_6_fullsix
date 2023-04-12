@@ -7,10 +7,10 @@ module.exports = (sequelize, dataTypes) => {
         }
     };
     let config = {
-        timestamps: false,
-        createdAt: false,
-        updatedAt: false,
-        deletedAt: false,
+        timestamps: true,
+        createdAt: true,
+        updatedAt: true,
+        deletedAt: true,
         tableName: "product_cart",
         underscore: true
     }
@@ -23,7 +23,7 @@ module.exports = (sequelize, dataTypes) => {
         }),
         ProductCart.belongsTo(models.Product, { 
             as: "product", //Se usa en en controlador
-            foreignKey: "id_producto"
+            foreignKey: "id_product"
         })
     }
 

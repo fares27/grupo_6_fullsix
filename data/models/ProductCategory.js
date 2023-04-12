@@ -17,9 +17,9 @@ module.exports = (sequelize, dataTypes) => {
     
     let config = {
         timestamps: true,
-        createdAt: false,
-        updatedAt: false,
-        deletedAt: false,
+        createdAt: true,
+        updatedAt: true,
+        deletedAt: true,
         tableName: "product_category",
         underscore: true
     }

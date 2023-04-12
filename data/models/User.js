@@ -20,15 +20,19 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         },
         password: {
-            type: dataTypes.STRING(100),
+            type: dataTypes.STRING(256),
+            allowNull: false
+        },
+        image: {
+            type: dataTypes.STRING(256),
             allowNull: false
         }
     };
     let config = {
-        timestamps: false,
-        createdAt: false,
-        updatedAt: false,
-        deletedAt: false,
+        timestamps: true,
+        createdAt: true,
+        updatedAt: true,
+        deletedAt: true,
         tableName: "user",
         underscore: true
     }

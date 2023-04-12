@@ -16,10 +16,10 @@ module.exports = (sequelize, dataTypes) => {
     };
     
     let config = {
-        timestamps: false,
-        createdAt: false,
-        updatedAt: false,
-        deletedAt: false,
+        timestamps: true,
+        createdAt: true,
+        updatedAt: true,
+        deletedAt: true,
         tableName: "user_rol",
         underscore: true
     }

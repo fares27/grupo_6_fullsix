@@ -9,10 +9,10 @@ module.exports = (sequelize, dataTypes) => {
         }
     };
     let config = {
-        timestamps: false,
-        createdAt: false,
-        updatedAt: false,
-        deletedAt: false,
+        timestamps: true,
+        createdAt: true,
+        updatedAt: true,
+        deletedAt: true,
         tableName: "cart",
         underscore: true
     }

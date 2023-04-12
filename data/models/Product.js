@@ -12,7 +12,7 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         },
         description: {
-            type: dataTypes.STRING(100),
+            type: dataTypes.STRING(256),
             allowNull: false
         },
         duration: {
@@ -26,13 +26,17 @@ module.exports = (sequelize, dataTypes) => {
         price: {
             type: dataTypes.DECIMAL(9,2),
             allowNull: false
+        },
+        state: {
+        type: dataTypes.BIGINT(10),
+        allowNull: false
         }
     };
     let config = {
-        timestamps: false,
-        createdAt: false,
-        updatedAt: false,
-        deletedAt: false,
+        timestamps: true,
+        createdAt: true,
+        updatedAt: true,
+        deletedAt: true,
         tableName: "product",
         underscore: true
     }
@@ -45,7 +49,7 @@ module.exports = (sequelize, dataTypes) => {
         }),
         Product.hasMany(models.ProductCart, { // models.Movies -> Movie es el valor de alias en movie.js
             as: "productCarts", // El nombre del modelo pero en plural, se usaria en el controlador
-            foreignKey: "id_producto"
+            foreignKey: "id_product"
         })
     }
 
