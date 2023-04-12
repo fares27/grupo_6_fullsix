@@ -86,11 +86,12 @@ productCreate: (req, res) => {
             name : req.body.name,
             description: req.body.description,
             duration: req.body.duration,
-            image: image,
+            image: req.file.path,
             id_category : req.body.category,
             price : req.body.price,
             state: 1
         }    
+        console.log(_body)
         //return res.send(_body);
         Product.create(_body)
         .then(plan =>{
