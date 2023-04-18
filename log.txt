@@ -1,1 +1,1 @@
-Se ingreso en la página/products/create
+Se ingreso en la página/register

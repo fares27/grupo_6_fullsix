@@ -9,7 +9,6 @@ const fs = require("fs");
 const mainRouter = require("./routes/mainRouter")
 const productsRouter = require("./routes/productsRouter")
 const authRouter = require("./routes/authRouter")
-const logMiddleware = require('./public/Middlewares/logMiddleware');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
 
@@ -24,7 +23,6 @@ app.set("view engine", "ejs");
 app.use(methodOverride('_method')); //Para poder pisar el method="POST" en el formulario por PUT y DELETE
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
-app.use(logMiddleware);
 app.use(session(
   {
     resave: true,

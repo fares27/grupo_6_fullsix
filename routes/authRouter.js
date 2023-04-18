@@ -40,4 +40,6 @@ router.post("/register", uploadFile.single('image'), authController.postRegister
 
 router.get("/usuariosAll", authController.usuarioGetAll);
 
+router.get('/logout', authController.logout);
+
 module.exports = router;
