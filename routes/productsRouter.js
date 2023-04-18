@@ -30,7 +30,7 @@ router.get("/productCart", authMiddleware,productsController.productCart); // CA
 
 router.get("/products/create", productsController.productFormLoad); // FORMULARIO DE CREACION DE PRODUCTO // CREATE GET
 
-router.post("/products", productsController.productCreate); // FORMULARIO DE ENVIO DE CREACION DE PRODUCTO // CREATE POST
+//router.post("/products", productsController.productCreate); // FORMULARIO DE ENVIO DE CREACION DE PRODUCTO // CREATE POST
 router.post("/products",uploadFileProduct.single('image'), productsController.productCreate); // FORMULARIO DE ENVIO DE CREACION DE PRODUCTO // CREATE POST
 
 router.get("/products", productsController.products); // LISTADO DE PLANES (PRODUCTOS) // READ ALL

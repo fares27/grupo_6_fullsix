@@ -86,7 +86,7 @@ productCreate: (req, res) => {
             name : req.body.name,
             description: req.body.description,
             duration: req.body.duration,
-            image: req.file.path,
+            image: image,
             id_category : req.body.category,
             price : req.body.price,
             state: 1
@@ -156,7 +156,7 @@ productAll:  (req, res) => {
 // CREADO PARA PROBAR EL SEQUELIZE
 cartAll: (req, res) => {
     db.Cart.findAll({
-        include: [{association: 'user'}, {association: 'productCarts'}]
+        include: {all: true , nested: true}
     })
     .then(carts => {
         res.json(carts);
