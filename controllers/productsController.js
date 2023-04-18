@@ -77,7 +77,7 @@ productFormEdit: (req, res) => {
 // ----------------   CONTROLLER PARA CREACION EN BD DE UN PRODUCTO ------------------ //
 productCreate: (req, res) => {
 
-        const defaultImagePath = 'public\\img\\avatars\\default-image.jpg';
+        const defaultImagePath = 'public\\img\\producst\\default-image.jpg';
                      let image = defaultImagePath;
             if (req.file !== undefined) {
                     image = req.file.path;
