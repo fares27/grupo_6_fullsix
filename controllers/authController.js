@@ -37,7 +37,7 @@ module.exports = {
         //     }
         // Guarda el correo electrónico del usuario en la sesión
 
-        const { email, password, remember, id_rol } = req.body;
+        const { email, password, remember} = req.body;
 
         // Busca al usuario en la base de datos usando Sequelize
         const user = await User.findOne({ where: { email } });

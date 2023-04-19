@@ -26,6 +26,10 @@ module.exports = (sequelize, dataTypes) => {
         image: {
             type: dataTypes.STRING(256),
             allowNull: false
+        },
+        id_rol:{
+            type: dataTypes.BIGINT(10),
+            allowNull: false
         }
     };
     let config = {
