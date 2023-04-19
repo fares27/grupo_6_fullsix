@@ -8,7 +8,7 @@
         <i class="fas fa-bars"></i>
       </div>
       <ul class="menu">
-        <li type="none"><a href="/">Inicio</a></li>
+       <li type="none"><a href="/">Inicio</a></li>
         <li type="none"><a href="/#clientes">Clientes</a></li>
         <li type="none"><a href="/#comofunciona">¿Cómo funciona?</a></li>
         <li type="none">
@@ -16,14 +16,32 @@
         </li>
         <li type="none"><a href="">Contacto</a></li>
       </ul>
+    
       <ul class="register-menu">
+        <% if(locals.email) { %> 
+          <!--Aquí dispongo  el acceso sólo al o los usuarios administradores-->
+    <% if(locals.email.id_rol==="1") { %>
+        <button><a href="/administrar">Administrar</a></button>
+    <%}%>  
+      <button><a href="/logout">Cerrar sesión<ion-icon name="log-out-outline"></ion-icon></a></button>
+    <button>
+      <a href="/productCart"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+    </button>
+  <% } else { %>  
 
+    <!--Cuando no estoy logueado debería ver esto-->
+    <button><a href="/login">Ingresar</a></button>
+    <button><a href="/register">Registrarme</a></button>
+    
+  <%}%>  
+<!-- 
           <button><a href="/login">Ingresar</a></button>
           <button><a href="/register">Registrarme</a></button>
           <button><a href="/logout">Cerrar sesión<ion-icon name="log-out-outline"></ion-icon></a></button>
           <button>
             <a href="/productCart"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
           </button>
+          -->
       </ul>
     </div>
   </navbar>

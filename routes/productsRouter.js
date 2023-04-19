@@ -20,11 +20,10 @@ const uploadFileProduct = multer({ storage });
 // MIDDLEWARE PARA VERIFICAR SI EL USUARIO ESTA AUTENTICADO
 const authMiddleware = (req, res, next) => {
     if (!req.session.email) {
-const authMiddleware = (req, res, next) => {
+      return res.redirect('/login');
+    }
     next();
   };
-    }}
-
 
 router.get("/productCart", authMiddleware,productsController.productCart); // CARRITO DE COMPRAS
 

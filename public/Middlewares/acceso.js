@@ -10,11 +10,11 @@ const { User} = require('../../data/models');
 
 module.exports = (req,res,next) =>{
     //Variable locals (super global - vive en las vistas )
-    res.locals.usuario = false;
+    res.locals.email = false;
     
-    if(req.session.usuario){
+    if(req.session.email){
         //console.log('Daniel '+ req.session.usuario.email);
-        res.locals.usuario = req.session.usuario;
+        res.locals.email = req.session.email;
         return next();
     }else if(req.cookies.email){
         User.findOne({
@@ -23,8 +23,8 @@ module.exports = (req,res,next) =>{
             }
         })
         .then(user =>{
-            req.session.usuario = user;
-            res.locals.usuario = user;
+            req.session.email = user;
+            res.locals.email = user;
             
             return next();
     
