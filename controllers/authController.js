@@ -1,10 +1,10 @@
 const path = require("path");
 const fs = require("fs");
 const { create } = require("domain");
-const { json } = require("express");
+//const { json } = require("express");
 const bcrypt = require('bcryptjs'); //Para encriptar passwords
-const usersFilePath = path.join(__dirname, '../data/users.json');
-const users = JSON.parse(fs.readFileSync(usersFilePath, "utf8"));
+//const usersFilePath = path.join(__dirname, '../data/users.json');
+//const users = JSON.parse(fs.readFileSync(usersFilePath, "utf8"));
 const db = require('../data/models');
 const User = db.User;
 const UserRol = db.UserRol;
@@ -64,7 +64,7 @@ module.exports = {
             }
 
             // Guarda el correo electrónico del usuario en la sesión
-            req.session.email = email;
+            req.session.usuario = email;
 
             // Redirige al usuario a la página principal
             res.redirect('/');

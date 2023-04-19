@@ -12,6 +12,9 @@ const authRouter = require("./routes/authRouter")
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
 
+//Requerir el middleware que controla si el usuario está o no Logueado
+const acceso = require('./public/Middlewares/acceso');
+
 // Crear el path hacia la carpeta Public
 const publicPath = path.resolve(__dirname, "./public");
 
@@ -35,6 +38,8 @@ app.use(cookieParser());
 app.use(mainRouter);
 app.use(productsRouter);
 app.use(authRouter);
+//Aquí requiero el Middleware de aplicación el cual controla si el usuario está o no Logueado
+app.use(acceso);
 
 //Error 404. Tiene que ir desp de las rutas 
 app.use((req, res, next) => {
