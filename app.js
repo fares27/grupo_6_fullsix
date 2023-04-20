@@ -33,13 +33,13 @@ app.use(session(
     secret: '$3cr3T0 Fu11 $1x'}));
 app.use(cookieParser());
 
+//Aquí requiero el Middleware de aplicación el cual controla si el usuario está o no Logueado
+app.use(acceso);
 
 // Rutas
 app.use(mainRouter);
 app.use(productsRouter);
 app.use(authRouter);
-//Aquí requiero el Middleware de aplicación el cual controla si el usuario está o no Logueado
-app.use(acceso);
 
 //Error 404. Tiene que ir desp de las rutas 
 app.use((req, res, next) => {

@@ -65,7 +65,7 @@ module.exports = {
 
             // Guarda el correo electrónico del usuario en la sesión
             req.session.email = user;
-            console.log(user);
+            //console.log(user);
 
             // Redirige al usuario a la página principal
             res.redirect('/');

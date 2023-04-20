@@ -5,7 +5,7 @@ const path = require('path');
 
 //------- Sequelize ----------------//
 
-const { User} = require('../../data/models');
+const {User} = require('../../data/models');
 
 
 module.exports = (req,res,next) =>{
@@ -13,8 +13,7 @@ module.exports = (req,res,next) =>{
     res.locals.email = false;
     
     if(req.session.email){
-        //console.log('Daniel '+ req.session.usuario.email);
-        res.locals.email = req.session.email;
+        res.locals.email = req.session.email; // Le asignamos el usuario entero a locals.email.
         return next();
     }else if(req.cookies.email){
         User.findOne({
@@ -25,7 +24,7 @@ module.exports = (req,res,next) =>{
         .then(user =>{
             req.session.email = user;
             res.locals.email = user;
-            console.log(user);
+            //console.log(user);
             return next();
     
         })
