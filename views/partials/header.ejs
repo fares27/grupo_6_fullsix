@@ -20,11 +20,12 @@
       <ul class="register-menu">
         <% if(locals.email) { %> 
           <!--Aquí dispongo  el acceso sólo al o los usuarios administradores-->
-    <% if(locals.email.id_rol===1) { %>
-        <button><a href="/administrar">Administrar</a></button>
+    <% if(locals.email.id_rol==1) { %>
+        <button><a href="/products">Administrar</a></button>
     <%}%>  
       <button><a href="/logout">Cerrar sesión<ion-icon name="log-out-outline"></ion-icon></a></button>
     <button>
+
       <a href="/productCart"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
     </button>
   <% } else { %>  

@@ -25,7 +25,7 @@ module.exports = (req,res,next) =>{
         .then(user =>{
             req.session.email = user;
             res.locals.email = user;
-            
+            console.log(user);
             return next();
     
         })
