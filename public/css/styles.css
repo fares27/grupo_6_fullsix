@@ -396,6 +396,14 @@ form input {
   flex-direction: row;
 }
 
+.form-ingresa label{
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+.form-ingresa input{
+  margin-top: 10px;
+}
+
 .titulo-ingresa {
   font-size: 30px;
   font-weight: lighter;
@@ -550,6 +558,23 @@ form input {
   margin-top: 20px;
 }
 
+.boton-producto2 button{
+  background-color: var(--gris-verdoso);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 25px;
+  padding-left: 25px;
+  border-radius: 15px;
+  border: 0;
+  font-size: medium;
+  font-weight: bolder;
+}
+
+.boton-producto2{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
 .boton-producto button, .boton-producto-inicial button, .boton-producto-semestral button, .boton-producto-mensual button{
   background-color: white;
   padding-top: 10px;

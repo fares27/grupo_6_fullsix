@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD COMPARTIDO -->
+<%- include("./partials/head") %>
+
+    <body>
+        <!-- HEADER COMPARTIDO -->
+        <%- include("./partials/header") %>
+
+            <head>
+                <title>Contactanos</title>
+            </head>
+
+            <body>
+                <main>
+                    <div class="form-contenedor">
+                        <form>
+                            <h4 class="titulo-ingresa">Contactanos</h4>
+                            <div class="form-ingresa">
+                                <label for="name">Nombre:</label><br>
+                                <input type="text" id="name" name="name"><br>
+
+                                <label for="email">Correo electrónico:</label><br>
+                                <input type="email" id="email" name="email"><br>
+
+                                <label for="message">Mensaje:</label><br>
+                                <textarea id="message" name="message"></textarea><br>
+
+                                <div class="contenedor-boton-ingresa">
+                                <button class="boton-ingresa" type="submit">Enviar</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <!-- FOOTER COMPARTIDO -->
+                    <%- include("./partials/footer") %>
+                </main>
+                
+            </body>
+
+</html>

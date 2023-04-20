@@ -6,5 +6,6 @@ const path = require("path");
 
 // Vista a ejecutar en el Home
 router.get("/", mainController.index);  // HOME 
+router.get("/contact", mainController.contact);
   
 module.exports = router;

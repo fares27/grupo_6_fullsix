@@ -11,5 +11,10 @@ index: (req, res) => {
     }else{
         res.render('index', {email: ''})
     }
+},
+contact: (req,res)=>{
+    res.render("contact");
 }
+
+
 }

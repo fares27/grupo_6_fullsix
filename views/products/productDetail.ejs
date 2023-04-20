@@ -11,6 +11,13 @@
 <script src="https://kit.fontawesome.com/6cd48854d2.js" crossorigin="anonymous"></script>
 
     <h2 class="titulo-productDetail">Nuestros planes</h2>
+    <div class="boton-producto2">
+    <% if(locals.email) { %> 
+      <% if(locals.email.id_rol==1) { %>
+      <button><a href="/products/create">Crear nuevo</a></button>
+      <%}%> 
+      <%}%> 
+    </div>
     <main class="caja-main">
       <% planes.forEach(plan => { %>
       <!-- Planes -->
@@ -38,13 +45,13 @@
                 <button type="submit">Eliminar</button>
               </form>
               <%}%> 
-              <%}%> 
-
+              <%}%>
             </div>
         </div>
       </article>
       <% }) %>
     </main>
+    
 
   <!-- FOOTER COMPARTIDO -->
   <%- include("../partials/footer") %>
