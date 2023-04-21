@@ -74,6 +74,15 @@
   margin-left: 10px;
 }
 
+.name-header{
+  height: 45px;
+  width: 130px;
+  margin-left: 5px;
+}
+.avatar-user{
+  border-radius: 50%;
+}
+
 /*  FIN HEADER */
 /*  BODY */
 a {

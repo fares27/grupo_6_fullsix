@@ -31,6 +31,13 @@ CREATE TABLE IF NOT EXISTS `user` (
   CONSTRAINT `id_rol_u_foreign` FOREIGN KEY (`id_rol`) REFERENCES `user_rol` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+/*CARGO DATOS TABLA ROLES DE USUARIOS */;
+LOCK TABLES `user` WRITE;
+INSERT INTO `user` VALUES (1,'Administrador','Administrador','admin@gmail.com','$2a$10$DyYsePIm5/xinKpoqyBS.O31IRVeU.NBEPcV2PdjND7.2wH4yX4j2','/img/avatars/default-image.jpg',1,'2023-04-11 00:00:00',NULL,NULL),(2,'Cliente','Cliente','cliente@gmail.com','$2a$10$dtGdtCQwdMOoI88VZlNP6.FRzZ03d6rQTbF2rbK/g33ozx0BqdVBO','/img/avatars/default-image.jpg',2,'2023-04-11 00:00:00',NULL,NULL);
+UNLOCK TABLES;
+
+
+
 
 CREATE TABLE IF NOT EXISTS `product_category` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,

@@ -28,6 +28,12 @@
 
       <a href="/productCart"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
     </button>
+    <div class = "name-header">
+      <h2 >Hola <%= locals.email.first_name %></h2>
+    </div>
+    <div class="logo">
+      <img class ="avatar-user" src="<%= locals.email.image%>" alt="Imagen Avatar" width="100%" />
+    </div>
   <% } else { %>  
 
     <!--Cuando no estoy logueado debería ver esto-->
