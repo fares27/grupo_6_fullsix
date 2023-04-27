@@ -6,9 +6,10 @@ const path = require("path");
 const app = express();
 const methodOverride = require ('method-override'); //Para poder usar los métodos PUT y DELETE
 const fs = require("fs");
-const mainRouter = require("./routes/mainRouter")
-const productsRouter = require("./routes/productsRouter")
-const authRouter = require("./routes/authRouter")
+const mainRouter = require("./routes/mainRouter");
+const productsRouter = require("./routes/productsRouter");
+const authRouter = require("./routes/authRouter");
+const apiRouter = require("./routes/apiRouter");
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
 
@@ -40,6 +41,7 @@ app.use(acceso);
 app.use(mainRouter);
 app.use(productsRouter);
 app.use(authRouter);
+app.use(apiRouter);
 
 //Error 404. Tiene que ir desp de las rutas 
 app.use((req, res, next) => {
