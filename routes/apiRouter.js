@@ -7,4 +7,6 @@ router.get("/api/products",productsApiController.productAll); // API PRODUCTOS -
 
 router.get("/api/products/:id",productsApiController.product); // API PRODUCTOS -- TRAER TODOS
 
+router.get("/api/categorys", productsApiController.categorys);
+
 module.exports = router;

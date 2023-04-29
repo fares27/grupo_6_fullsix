@@ -12,12 +12,20 @@ const Op = db.Sequelize.Op;
 
 
 module.exports = {
+
+    categorys: (req, res) => {
+        db.ProductCategory.findAll()
+            .then(categorias => {
+                res.json(categorias);
+            })
+    },
+
     productAll: (req, res) => {
 
         const consultaCategorias = ProductCategory.findAll();
         const consultaProductos = Product.findAll(
             {
-                attributes: ['id', 'name', 'description', 'id_category'],
+                attributes: ['id', 'name', 'description', 'id_category', 'price', 'image'],
                 include: [{ attributes: ['id', 'name'], association: 'productCategory' }]
             }
         );
@@ -32,6 +40,8 @@ module.exports = {
                         id: producto.id,
                         name: producto.name,
                         description: producto.description,
+                        price: producto.price,
+                        image: producto.image,
                         productCategory: producto.productCategory,
                         detail: 'http://localhost:3000/api/products/' + producto.id
                     }
@@ -53,10 +63,13 @@ module.exports = {
                 }
                 )
 
+                const ultimoProducto = listadoProductos.pop();
+
                 const respuesta = {
                     metadata: {
                         count: listadoProductos.length,
                         countByCategory: listadoCategoriasCount,
+                        lastProduct: ultimoProducto,
                         status: 200,
                         url: "/api/products"
                     },
@@ -94,7 +107,7 @@ module.exports = {
                 }
                 return res.json(respuesta);
             })
-           
+
     }
 
 }
