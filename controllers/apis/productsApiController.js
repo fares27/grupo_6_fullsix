@@ -4,8 +4,6 @@ const { create } = require("domain");
 const db = require('../../data/models');
 const Product = db.Product;
 const ProductCategory = db.ProductCategory;
-const Cart = db.Cart;
-const ProductCart = db.ProductCart;
 
 // Para llamadas con COUNT, LIKE, MAX, etc.
 const Op = db.Sequelize.Op;
@@ -85,18 +83,26 @@ module.exports = {
 
         // OBTENGO EL PRODUCTO ESPECÍFICO DE LA BASE DE DATOS
 
-        let id = req.params.id;
+        let identificador = req.params.id;
 
-        db.Product.findByPk(id)
+        Product.findAll(
+            {
+                attributes: ['id', 'name', 'description', 'id_category', 'price', 'image'],
+                include: [{ attributes: ['id', 'name'], association: 'productCategory' }],
+                where: { id: identificador}
+            }
+        )
 
-            .then(producto => {
-                const detalleProducto = {
+            .then(productoEncontrado => {
+                const detalleProducto = productoEncontrado.map(producto => {
+                const listadoProducto = {
                     id: producto.id,
                     name: producto.name,
                     description: producto.description,
                     productCategory: producto.productCategory,
-                    image: 'http://localhost:3000/img/products/' + producto.image
-                }
+                    image: 'http://localhost:3000/img/products/' + producto.image}
+                    return listadoProducto;
+                })
 
                 const respuesta = {
                     metadata: {
