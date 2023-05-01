@@ -1,5 +1,3 @@
-
-
 // REQUIRES DEL APP.JS
 const express = require("express");
 const path = require("path");
@@ -12,6 +10,8 @@ const authRouter = require("./routes/authRouter");
 const apiRouter = require("./routes/apiRouter");
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
+//----------------------------------------
+const cors = require('cors');
 
 //Requerir el middleware que controla si el usuario está o no Logueado
 const acceso = require('./public/Middlewares/acceso');
@@ -36,6 +36,10 @@ app.use(cookieParser());
 
 //Aquí requiero el Middleware de aplicación el cual controla si el usuario está o no Logueado
 app.use(acceso);
+
+// CONFIGURACION DEL CORS PARA QUE PUEDAN LLAMAR A LA API
+const listaBlanca = ['http://localhost:3001/'];
+app.use(cors({Origin: listaBlanca}));
 
 // Rutas
 app.use(mainRouter);

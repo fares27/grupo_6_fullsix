@@ -29,11 +29,13 @@ CREATE TABLE IF NOT EXISTS `user` (
   PRIMARY KEY (`id`),
   KEY `id_rol_u_foreign` (`id_rol`),
   CONSTRAINT `id_rol_u_foreign` FOREIGN KEY (`id_rol`) REFERENCES `user_rol` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 /*CARGO DATOS TABLA ROLES DE USUARIOS */;
 LOCK TABLES `user` WRITE;
-INSERT INTO `user` VALUES (1,'Administrador','Administrador','admin@gmail.com','$2a$10$DyYsePIm5/xinKpoqyBS.O31IRVeU.NBEPcV2PdjND7.2wH4yX4j2','/img/avatars/default-image.jpg',1,'2023-04-11 00:00:00',NULL,NULL),(2,'Cliente','Cliente','cliente@gmail.com','$2a$10$dtGdtCQwdMOoI88VZlNP6.FRzZ03d6rQTbF2rbK/g33ozx0BqdVBO','/img/avatars/default-image.jpg',2,'2023-04-11 00:00:00',NULL,NULL);
+INSERT INTO `user` VALUES (1,'Administrador','Administrador','admin@gmail.com','$2a$10$DyYsePIm5/xinKpoqyBS.O31IRVeU.NBEPcV2PdjND7.2wH4yX4j2','default-image.jpg',1,'2023-04-11 00:00:00',NULL,NULL),(2,'Cliente','Cliente','cliente@gmail.com','$2a$10$dtGdtCQwdMOoI88VZlNP6.FRzZ03d6rQTbF2rbK/g33ozx0BqdVBO','default-image.jpg',2,'2023-04-11 00:00:00',NULL,NULL),(3,'Amir','Bartilone','amir.bartilone@gmail.com','$2a$10$DyYsePIm5/xinKpoqyBS.O31IRVeU.NBEPcV2PdjND7.2wH4yX4j2','avatarHombre.avif',1,'2023-04-11 00:00:00',NULL,NULL),
+(4,'Jazmin','Farias','jazminfarias07@gmail.com','$2a$10$DyYsePIm5/xinKpoqyBS.O31IRVeU.NBEPcV2PdjND7.2wH4yX4j2','avatarMujer.jpg',1,'2023-04-11 00:00:00',NULL,NULL),(5,'Marcos','Daut','marcos.daut@gmail.com','$2a$10$DyYsePIm5/xinKpoqyBS.O31IRVeU.NBEPcV2PdjND7.2wH4yX4j2','avatarHombre.avif',1,'2023-04-11 00:00:00',NULL,NULL);
+;
 UNLOCK TABLES;
 
 
@@ -72,7 +74,7 @@ CREATE TABLE IF NOT EXISTS `product` (
 
 /*CARGO DATOS TABLA PRODUCTOS*/;
 LOCK TABLES `product` WRITE;
-INSERT INTO `product` VALUES (1,'Plan Deportistas 1','Incluye una entrevista con un especialista y plan detallado para todo el mes.','60-90 minutos',NULL,100,1,1,'2023-04-11 00:00:00',NULL,NULL),(2,'Plan Entrenadores 1','Incluye una entrevista con un especialista y plan detallado para todo el mes.','1 mes',NULL,200,1,2,'2023-04-11 00:00:00',NULL,NULL),(3,'Plan Familia 1','Incluye una entrevista con un especialista y plan detallado para todo el mes.','6 meses',NULL,300,1,3,'2023-04-11 00:00:00',NULL,NULL);
+INSERT INTO `product` VALUES (1,'Plan Deportistas 1','Incluye una entrevista con un especialista y plan detallado para todo el mes.','60-90 minutos','Deportistas.png',100,1,1,'2023-04-11 00:00:00',NULL,NULL),(2,'Plan Entrenadores 1','Incluye una entrevista con un especialista y plan detallado para todo el mes.','1 mes','Entrenadores.png',200,1,2,'2023-04-11 00:00:00',NULL,NULL),(3,'Plan Familia 1','Incluye una entrevista con un especialista y plan detallado para todo el mes.','6 meses','Familiares.png',300,1,3,'2023-04-11 00:00:00',NULL,NULL);
 UNLOCK TABLES;
 
 
