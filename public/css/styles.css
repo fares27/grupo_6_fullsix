@@ -421,6 +421,7 @@ form input {
   font-size: 12px;
   display: flex;
   flex-direction: row;
+  margin-top: 1px;
 }
 
 .form-ingresa label {
