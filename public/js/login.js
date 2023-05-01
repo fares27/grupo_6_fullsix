@@ -2,6 +2,8 @@ window.addEventListener("load", function () {
   let userEmail = document.querySelector("[name=email]");
   let userPassword = document.querySelector("[name=password]");
 
+  // console.log(userEmail);
+
   const validateEmail = (e) => {
     const field = e.target;
     const fieldValue = e.target.value;
