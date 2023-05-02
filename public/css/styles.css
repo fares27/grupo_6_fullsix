@@ -88,6 +88,8 @@
 
 /*  FIN HEADER */
 /*  BODY */
+
+
 a {
   text-decoration: none;
   color: black;
@@ -879,6 +881,9 @@ form textarea {
   padding: 5px;
 }
 
+.desc-eliminar {
+  color: black;
+}
 /* FIN PRODUCT LOAD */
 
 /* 404 ERROR */
