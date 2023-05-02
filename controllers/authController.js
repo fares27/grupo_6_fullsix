@@ -8,6 +8,11 @@ const bcrypt = require('bcryptjs'); //Para encriptar passwords
 const db = require('../data/models');
 const User = db.User;
 const UserRol = db.UserRol;
+const {
+    check,
+    validationResult,
+    body
+  } = require('express-validator');
 
 // Para llamadas con COUNT, LIKE, MAX, etc.
 const Op = db.Sequelize.Op;
@@ -41,6 +46,7 @@ module.exports = {
 
         // Busca al usuario en la base de datos usando Sequelize
         const user = await User.findOne({ where: { email } });
+        let errors = validationResult(req);
 
         // Si el usuario no existe, redirige a la página de inicio de sesión con un mensaje de error
         if (!user) {
@@ -96,6 +102,15 @@ module.exports = {
     },
     postRegister: (req, res) => {
         // let newUser = users;
+        //En esta variable guardo lo enviado desde la ruta, con respecto a los errores encontrados en la carga de los datos por parte del usuario
+      let errors = validationResult(req);
+      //return res.send(errors);
+      //Aquí determino si hay ó no errores encontrados
+      if(!errors.isEmpty()) {
+        return res.render(path.resolve(__dirname, '../views/users/register'), {
+          errors: errors.errors,  old: req.body
+        });
+      } 
         const defaultImagePath = 'public\\img\\avatars\\default-image.jpg';
         let image = defaultImagePath;
         if (req.file !== undefined) {
@@ -114,6 +129,7 @@ module.exports = {
             .then(user => {
                 res.redirect('/login');
             })
+            .catch(error => console.log(error));
         // let userData = {
         //     'id': users[users.length - 1].id + 1,
         //     'firstName': req.body.firstname,
