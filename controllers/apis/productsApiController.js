@@ -61,11 +61,15 @@ module.exports = {
                 }
                 )
 
+                const totalCategorias = listadoCategoriasCount.length;
+                const totalProductos = listadoProductos.length;
+
                 const ultimoProducto = listadoProductos.pop();
 
                 const respuesta = {
                     metadata: {
-                        count: listadoProductos.length,
+                        countProducts: totalProductos,
+                        countCategorys: totalCategorias,
                         countByCategory: listadoCategoriasCount,
                         lastProduct: ultimoProducto,
                         status: 200,
@@ -89,18 +93,19 @@ module.exports = {
             {
                 attributes: ['id', 'name', 'description', 'id_category', 'price', 'image'],
                 include: [{ attributes: ['id', 'name'], association: 'productCategory' }],
-                where: { id: identificador}
+                where: { id: identificador }
             }
         )
 
             .then(productoEncontrado => {
                 const detalleProducto = productoEncontrado.map(producto => {
-                const listadoProducto = {
-                    id: producto.id,
-                    name: producto.name,
-                    description: producto.description,
-                    productCategory: producto.productCategory,
-                    image: 'http://localhost:3000/img/products/' + producto.image}
+                    const listadoProducto = {
+                        id: producto.id,
+                        name: producto.name,
+                        description: producto.description,
+                        productCategory: producto.productCategory,
+                        image: 'http://localhost:3000/img/products/' + producto.image
+                    }
                     return listadoProducto;
                 })
 
