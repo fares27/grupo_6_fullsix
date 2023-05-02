@@ -12,11 +12,13 @@
 
   <main>
     <div class="form-contenedor">
-      <form action="/login" method="POST">
+      <form action="/login" method="POST" class="formulario" id="formulario">
         <h4 class="titulo-ingresa">Ingresá</h4>
         <div class="form-ingresa">
           <input type="email" name="email" placeholder="E-mail" required>
+          <span></span>
           <input type="password" name="password" placeholder="Contraseña" required>
+          <span></span>
           <div class="contenedor-recordarme">
             <input class="checkbox-recordarme" type="checkbox" name="remember">
             <div class="recordarme">Recordarme</div></input>
@@ -27,6 +29,9 @@
           </div>
           <div class="contenedor-boton-ingresa">
             <button class="boton-ingresa" type="submit">Ingresar</button>
+            <div class="error-validation">
+              <p class="error-message" id="error-message"></p>
+            </div>
           </div>
       </form>
 
@@ -40,6 +45,7 @@
 
   <!-- FOOTER COMPARTIDO -->
   <%- include("../partials/footer") %>
+  <script src="/js/login.js"></script>
 </body>
 
 </html>
