@@ -96,7 +96,7 @@ module.exports = {
         const defaultImagePath = 'default-image.jpg';
         let image = defaultImagePath;
         if (req.file !== undefined) {
-            image = req.file.path;
+            image = req.file.filename;
         }
         const _body = {
             first_name: req.body.firstname,
