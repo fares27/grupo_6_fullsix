@@ -77,10 +77,10 @@ productFormEdit: (req, res) => {
 // ----------------   CONTROLLER PARA CREACION EN BD DE UN PRODUCTO ------------------ //
 productCreate: (req, res) => {
 
-        const defaultImagePath = 'public\\img\\producst\\default-image.jpg';
+        const defaultImagePath = 'default-image.jpg';
                      let image = defaultImagePath;
             if (req.file !== undefined) {
-                    image = req.file.path;
+                    image = req.file.filename;
             }
         const _body = { 
             name : req.body.name,
@@ -104,31 +104,45 @@ productEdit: (req, res) => {
 
     let id = req.params.id;
 
-    Product.update ({
-        name : req.body.name,
-        description: req.body.description,
-        duration: req.body.duration,
-        image: "",
-        id_category : req.body.category,
-        price : req.body.price
-    }, {
-        where: {
-            id:req.params.id
-       }
+    Product.findByPk(id)
+
+    .then(producto =>{
+
+        let image = "";
+
+        if (producto.image !== null){
+        //    console.log("Entro en Imagen producto")
+            image = producto.image;   
+        }   else {
+         //   console.log("Entro en Null")
+             image = 'default-image.jpg';   
+        }
+
+        return image;
+    }) 
+    .then(image => {
+        
+        if (req.file !== undefined) {
+             console.log("Entro en Imagen desde Front")
+             image = req.file.filename;
+         }
+
+        Product.update ({
+            name : req.body.name,
+            description: req.body.description,
+            duration: req.body.duration,
+            image: image,
+            id_category : req.body.category,
+            price : req.body.price
+        }, {
+            where: {
+                id:req.params.id
+           }
+        })
+        .then(()=> res.redirect('/products/'+req.params.id+'/'))
+    
     })
-    .then(()=> res.redirect('/products/'+req.params.id+'/'))
- 
-//    console.log(planToEdit);
-    
-//   const listadoPlanesActualizado = listadoPlanes.map(plan => plan.id == planToEdit.id ? planToEdit: plan );
 
-
-//    const newListadoPlanesActualizado = JSON.stringify(listadoPlanesActualizado);
-
-    
-//     fs.writeFileSync(path.join(__dirname, '../data/products.json'),newListadoPlanesActualizado,'');
-    
-//    res.redirect("/");
 },
 
 // ----------------   CONTROLLER PARA BAJA LOGICA EN BD DE UN PRODUCTO ------------------ //
@@ -141,26 +155,6 @@ productDelete: (req, res) => {
        }
     })
     .then(()=>  res.redirect('/products'))
-},
-
-// CREADO PARA PROBAR EL SEQUELIZE
-productAll:  (req, res) => {
-    db.Product.findAll({
-        include: [{association: 'productCategory'}]
-    })
-    .then(productos => {
-        res.json(productos);
-    })
-},
-
-// CREADO PARA PROBAR EL SEQUELIZE
-cartAll: (req, res) => {
-    db.Cart.findAll({
-        include: {all: true , nested: true}
-    })
-    .then(carts => {
-        res.json(carts);
-    })
 }
 
 }

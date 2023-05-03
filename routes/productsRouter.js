@@ -36,7 +36,6 @@ const authMiddleware = (req, res, next) => {
  };
 
 
-
 router.get("/productCart", authMiddleware,productsController.productCart); // CARRITO DE COMPRAS
 
 router.get("/products/create",authMiddlewareAdmin, productsController.productFormLoad); // FORMULARIO DE CREACION DE PRODUCTO // CREATE GET
@@ -47,12 +46,9 @@ router.get("/products",productsController.products); // LISTADO DE PLANES (PRODU
 
 router.get("/products/:id/", productsController.productDetail); //  LISTADO DE PLAN (PRODUCTO) // READ ONLY 
 router.get("/products/:id/edit",authMiddlewareAdmin, productsController.productFormEdit); // FORMULARIO DE EDICION DE PRODUCTO // UPDATE GET
-router.put("/products/:id/", productsController.productEdit); // FORMULARIO DE ENVIO DE EDICION DE PRODUCTO // UPDATE PUT
+router.put("/products/:id/",uploadFileProduct.single('image'), productsController.productEdit); // FORMULARIO DE ENVIO DE EDICION DE PRODUCTO // UPDATE PUT
 router.delete("/products/:id/", productsController.productDelete); // FORMULARIO DE ENVIO DE ORDEN DE ELIMINACION
 
-// PARA PRUEBAS
-router.get("/productsAll", productsController.productAll); // Prueba de traerme todos los productos
-router.get("/cartsAll", productsController.cartAll); // Prueba de traerme todos los productos
 
 
 module.exports = router;

@@ -8,6 +8,7 @@ const bcrypt = require('bcryptjs'); //Para encriptar passwords
 const db = require('../data/models');
 const User = db.User;
 const UserRol = db.UserRol;
+
 const {
     check,
     validationResult,
@@ -22,25 +23,6 @@ module.exports = {
         res.render("./users/login");
     },
     postLogin: async (req, res) => {
-
-        // const loggedUser = users.find((user) => user.email === email);
-
-        //     if (loggedUser) {
-        //         let isCorrect = bcrypt.compareSync(password, loggedUser.password);
-
-        //         if (!isCorrect) {
-        //             console.log('contra incorrecta'); //esto desp se borra
-        //             return res.redirect('/login')  //cuando existe y la contra es incorrecta
-        //         }
-        //     } else {
-        //         console.log('mail no registrado') //esto desp se borra
-        //         return res.redirect('/login'); //cuando no esta registrado el mail, entra acá
-        //     }
-
-        //     if (remember) {
-        //         res.cookie("email", loggedUser.email, { maxAge: 60 * 60 * 24 * 31 * 1000 })
-        //     }
-        // Guarda el correo electrónico del usuario en la sesión
 
         const { email, password, remember} = req.body;
 
@@ -111,7 +93,7 @@ module.exports = {
           errors: errors.errors,  old: req.body
         });
       } 
-        const defaultImagePath = 'public\\img\\avatars\\default-image.jpg';
+        const defaultImagePath = 'default-image.jpg';
         let image = defaultImagePath;
         if (req.file !== undefined) {
             image = req.file.path;
@@ -130,22 +112,7 @@ module.exports = {
                 res.redirect('/login');
             })
             .catch(error => console.log(error));
-        // let userData = {
-        //     'id': users[users.length - 1].id + 1,
-        //     'firstName': req.body.firstname,
-        //     'lastName': req.body.lastname,
-        //     'password': bcrypt.hashSync(req.body.password, 10),
-        //     'email': req.body.email,
-        //     'image': image
-
-        // };
-        // console.log(userData);
-        // newUser.push(userData);
-
-        // fs.writeFileSync(usersFilePath, JSON.stringify(newUser, null, ''));
-
-        // res.redirect('/login');
-
+ 
 
     }
 }
