@@ -691,6 +691,9 @@ form input {
   padding-top: 0px;
   padding-bottom: 0px; /* color 1 */
 }
+.producto:nth-child(3n+1) a {
+ color: var(--verde-oscuro);
+}
 
 .producto:nth-child(3n+2) {
   background-color: var(--gris-verdoso);
@@ -703,6 +706,10 @@ form input {
   padding-bottom: 0px; /* color 2 */
 }
 
+.producto:nth-child(3n+2) a {
+  color: var(--gris-verdoso);
+ }
+
 .producto:nth-child(3n+3) {
   background-color: var(--marron);
   border-radius: 15%;
@@ -713,6 +720,10 @@ form input {
   padding-top: 0px;
   padding-bottom: 0px; /* color 3 */
 }
+
+.producto:nth-child(3n+3) a {
+  color: var(--marron);
+ }
 
 .mensual {
   background-color: var(--gris-verdoso);
@@ -939,7 +950,7 @@ form textarea {
 }
 
 .desc-eliminar {
-  color: black;
+  color: darkred;
 }
 /* FIN PRODUCT LOAD */
 
