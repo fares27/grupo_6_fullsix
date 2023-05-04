@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 
 /*CARGO DATOS TABLA ROLES DE USUARIOS */;
 LOCK TABLES `user` WRITE;
-INSERT INTO `user` VALUES (1,'Administrador','Administrador','admin@gmail.com','$2a$10$4rc4x/M/U9j9QZIySa5so.4fUVIopAKnYa4KTgMM30xlt3leg2Nwi','default-image.jpg',1,'2023-04-11 00:00:00',NULL,NULL),(2,'Cliente','Cliente','cliente@gmail.com','$2a$10$dtGdtCQwdMOoI88VZlNP6.FRzZ03d6rQTbF2rbK/g33ozx0BqdVBO','default-image.jpg',2,'2023-04-11 00:00:00',NULL,NULL),(3,'Amir','Bartilone','amir.bartilone@gmail.com','$2a$10$4rc4x/M/U9j9QZIySa5so.4fUVIopAKnYa4KTgMM30xlt3leg2Nwi','avatarHombre.avif',1,'2023-04-11 00:00:00',NULL,NULL),
+INSERT INTO `user` VALUES (1,'Administrador','Administrador','admin@gmail.com','$2a$10$4rc4x/M/U9j9QZIySa5so.4fUVIopAKnYa4KTgMM30xlt3leg2Nwi','default-image.jpg',1,'2023-04-11 00:00:00',NULL,NULL),(2,'Cliente','Cliente','cliente@gmail.com','$2a$10$dtGdtCQwdMOoI88VZlNP6.FRzZ03d6rQTbF2rbK/g33ozx0BqdVBO','default-image.jpg',2,'2023-04-11 00:00:00',NULL,NULL),(3,'Amir','Bartilone','amir.bartilone@gmail.com','$2a$10$4rc4x/M/U9j9QZIySa5so.4fUVIopAKnYa4KTgMM30xlt3leg2Nwi','avatar-hombre.jpg',1,'2023-04-11 00:00:00',NULL,NULL),
 (4,'Jazmin','Farias','jazminfarias07@gmail.com','$2a$10$4rc4x/M/U9j9QZIySa5so.4fUVIopAKnYa4KTgMM30xlt3leg2Nwi','avatarMujer.jpg',1,'2023-04-11 00:00:00',NULL,NULL),(5,'Marcos','Daut','marcos.daut@gmail.com','$2a$10$4rc4x/M/U9j9QZIySa5so.4fUVIopAKnYa4KTgMM30xlt3leg2Nwi','avatarHombre.avif',1,'2023-04-11 00:00:00',NULL,NULL);
 ;
 UNLOCK TABLES;
