@@ -1208,7 +1208,7 @@ form textarea {
   .caja-main {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: w;
     width: 100%;
     justify-content: center;
     margin-bottom: 20%;
