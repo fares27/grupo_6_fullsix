@@ -1,14 +1,15 @@
 <header>
   <navbar>
     <div class="nav">
-      <div class="logo">
-        <a href="/"
-          ><img src="/img/FULL SIX 6.png" alt="Logo FullSix" width="100%"
-        /></a>
+      <div class="logo-burger">
+        <div class="logo">
+          <a href="/"><img src="/img/FULL SIX 6.png" alt="Logo FullSix" width="100%" /></a>
+        </div>
+        <div class="burger-menu">
+          <i class="fas fa-bars"></i>
+        </div>
       </div>
-      <div class="burger-menu">
-        <i class="fas fa-bars"></i>
-      </div>
+      <div>
       <ul class="menu">
         <li type="none"><a href="/">Inicio</a></li>
         <li type="none"><a href="/#clientes">Clientes</a></li>
@@ -18,42 +19,35 @@
         </li>
         <li type="none"><a href="/contact">Contacto</a></li>
       </ul>
+    </div>
 
       <ul class="register-menu">
         <% if(locals.email) { %>
-        <!--Aquí dispongo  el acceso sólo al o los usuarios administradores-->
-        <% if(locals.email.id_rol==1) { %>
-        <button><a href="/products">Administrar</a></button>
-        <%}%>
-        <button>
-          <a href="/logout"
-            >Cerrar sesión<ion-icon name="log-out-outline"></ion-icon
-          ></a>
-        </button>
-        <button>
-          <a href="/productCart"
-            ><i class="fa-sharp fa-solid fa-cart-shopping"></i
-          ></a>
-        </button>
-        <div class="name-header">
-          <h2>Hola <%= locals.email.first_name %></h2>
-        </div>
-        <div class="logo">
-          <img
-            class="avatar-user"
-            src="/img/avatars/<%= locals.email.image%>"
-            alt="Imagen Avatar"
-            width="100%"
-          />
-        </div>
-        <% } else { %>
+          <!--Aquí dispongo  el acceso sólo al o los usuarios administradores-->
+          <% if(locals.email.id_rol==1) { %>
+            <button><a href="/products">Administrar</a></button>
+            <%}%>
+              <button>
+                <a href="/logout">Cerrar sesión<ion-icon name="log-out-outline"></ion-icon></a>
+              </button>
+              <button>
+                <a href="/productCart"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+              </button>
+              <div class="name-header">
+                <h2>Hola <%= locals.email.first_name %>
+                </h2>
+              </div>
+              <div class="logo">
+                <img class="avatar-user" src="/img/avatars/<%= locals.email.image%>" alt="Imagen Avatar" width="100%" />
+              </div>
+              <% } else { %>
 
-        <!--Cuando no estoy logueado debería ver esto-->
-        <button><a href="/login">Ingresar</a></button>
-        <button><a href="/register">Registrarme</a></button>
+                <!--Cuando no estoy logueado debería ver esto-->
+                <button><a href="/login">Ingresar</a></button>
+                <button><a href="/register">Registrarme</a></button>
 
-        <%}%>
-        <!-- 
+                <%}%>
+                  <!-- 
           <button><a href="/login">Ingresar</a></button>
           <button><a href="/register">Registrarme</a></button>
           <button><a href="/logout">Cerrar sesión<ion-icon name="log-out-outline"></ion-icon></a></button>
@@ -64,4 +58,5 @@
       </ul>
     </div>
   </navbar>
+  <script src="/js/header.js"></script>
 </header>
