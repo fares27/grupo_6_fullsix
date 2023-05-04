@@ -1330,6 +1330,7 @@ form textarea {
   }
 
   .form-contenedor {
+    margin-top: 45px;
     margin-left: 30%;
     margin-right: 30%;
   }
