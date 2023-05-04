@@ -684,8 +684,8 @@ form input {
 .producto:nth-child(3n+1) {
   background-color: var(--verde-oscuro);
   border-radius: 15%;
-  margin-left: 7px;
-  margin-right: 7px;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-top: 40px;
   margin-bottom: 40px;
   padding-top: 0px;
@@ -695,8 +695,8 @@ form input {
 .producto:nth-child(3n+2) {
   background-color: var(--gris-verdoso);
   border-radius: 15%;
-  margin-left: 7px;
-  margin-right: 7px;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-top: 40px;
   margin-bottom: 40px;
   padding-top: 0px;
@@ -706,8 +706,8 @@ form input {
 .producto:nth-child(3n+3) {
   background-color: var(--marron);
   border-radius: 15%;
-  margin-left: 7px;
-  margin-right: 7px;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-top: 40px;
   margin-bottom: 40px;
   padding-top: 0px;
@@ -1240,7 +1240,7 @@ form textarea {
   .caja-main {
     display: flex;
     flex-direction: row;
-    flex-wrap: w;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: center;
     margin-bottom: 20%;
