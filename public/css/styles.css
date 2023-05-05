@@ -625,14 +625,15 @@ form input {
   border-radius: 15px;
   border: 0;
   font-size: medium;
-  font-weight: bolder;
 }
 
 .boton-producto2 {
   display: flex;
   justify-content: center;
   margin-top: 15px;
+  color: white;
 }
+
 .boton-producto button,
 .boton-producto-inicial button,
 .boton-producto-semestral button,
@@ -691,10 +692,6 @@ form input {
   padding-top: 0px;
   padding-bottom: 0px; /* color 1 */
 }
-.producto:nth-child(3n+1) a {
- color: var(--verde-oscuro);
-}
-
 .producto:nth-child(3n+2) {
   background-color: var(--gris-verdoso);
   border-radius: 15%;
@@ -706,10 +703,6 @@ form input {
   padding-bottom: 0px; /* color 2 */
 }
 
-.producto:nth-child(3n+2) a {
-  color: var(--gris-verdoso);
- }
-
 .producto:nth-child(3n+3) {
   background-color: var(--marron);
   border-radius: 15%;
@@ -720,10 +713,6 @@ form input {
   padding-top: 0px;
   padding-bottom: 0px; /* color 3 */
 }
-
-.producto:nth-child(3n+3) a {
-  color: var(--marron);
- }
 
 .mensual {
   background-color: var(--gris-verdoso);
@@ -1059,6 +1048,7 @@ form textarea {
   .semestral button:hover,
   .end button:hover,
   .cupon button:hover,
+  .boton-producto2 button:hover,
   .boton-producto button:hover {
     box-shadow: 0px 0px 10px rgba(100, 100, 100, 1);
   }
