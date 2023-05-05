@@ -480,8 +480,9 @@ form input {
 .recordarme {
   flex-direction: row;
   display: flex;
+  margin-top: 8px;
   margin-left: 10px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .checkbox-recordarme {
@@ -510,7 +511,7 @@ form input {
 }
 
 .form-leyenda a {
-  font-weight: bolder;
+  font-weight: lighter;
 }
 
 .form-leyenda {
@@ -1051,6 +1052,11 @@ form textarea {
   .boton-producto2 button:hover,
   .boton-producto button:hover {
     box-shadow: 0px 0px 10px rgba(100, 100, 100, 1);
+  }
+
+  .form-leyenda a:hover,
+  .nav a:hover{
+    font-weight: bolder;
   }
 
   .header-contenedor {
