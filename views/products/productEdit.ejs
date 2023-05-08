@@ -20,19 +20,22 @@
                 
                 <label class="label-form-load" for="name">Nombre del plan</label>
                 <input class="input-form-load" type="text" name="name" id="name"  required value="<%= plan.name %>">
+                <span></span>
                 
                 <label class="label-form-load" for="description">Descripcion del plan</label>
                 <textarea class="input-form-load" name="description" id="description" required><%= plan.description %></textarea>
-
+                <span></span>
+                
                 <label class="label-form-load" for="duration">Duración del plan</label>
                 <input class="input-form-load" type="text" name="duration" id="duration" required value="<%= plan.duration %>" >
+                <span></span>
                 
                 <label class="label-form-load" for="image">Imagen del plan</label>
                 <input class="input-form-load" type="file" name="image" id="image" accept=".jpg">
-
+                <span></span>
                 
                 <label class="label-form-load" for="category">Categoria del plan</label>
-                <br></br>
+                
                 <div class="contenedor-categoria">
                   <% categorias.forEach(categoria => { %>
                     <input  class="input-form-load" type="radio" name="category" id="category"  value="<%= categoria.id %>"  <% if (plan.id_category == categoria.id) { %> checked <% } %>  > <%= categoria.name %>
@@ -42,6 +45,7 @@
 
                 <label class="label-form-load" for="price">Precio del plan</label>
                 <input  class="input-form-load" type="text" name="price" id="price" value="<%= plan.price %>">
+                <span></span>
 
                 <div class="contenedor-boton-carga">
                   <button class="boton-carga"><a href="/products">Volver</a></button>  

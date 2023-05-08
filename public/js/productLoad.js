@@ -3,6 +3,25 @@ window.addEventListener("load", function () {
   let productDescription = document.querySelector("[name=description]");
   let productDuration = document.querySelector("[name=duration]");
   let productFile = document.querySelector("[name=image]");
+  let productPrice = document.querySelector("[name=price]")
+  
+
+  const validatePrice = (e) => {
+    const field = e.target;
+    const fieldValue = e.target.value;
+    const regexPrice = new RegExp(
+      /^[0-9]+([.][0-9]+)?$/i
+    );
+    if (fieldValue.trim().length === 0 || !regexPrice.test(fieldValue)) {
+      field.classList.add("invalid");
+      field.nextElementSibling.classList.add("error");
+      field.nextElementSibling.innerText = "El campo precio debe ser numérico, mayor a 0 y no estar vacío.";
+    } else {
+      field.classList.remove("invalid");
+      field.nextElementSibling.classList.remove("error");
+      field.nextElementSibling.innerText = "";
+    }
+  };
 
   const validateField = (e) => {
     const field = e.target;
@@ -50,4 +69,5 @@ window.addEventListener("load", function () {
   productName.addEventListener("blur", validateField);
   productDescription.addEventListener("blur", validateFieldDescription);
   productDuration.addEventListener("blur", validateField);
+  productPrice.addEventListener("blur", validatePrice);
 });
