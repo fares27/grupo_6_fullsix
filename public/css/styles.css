@@ -31,7 +31,7 @@
   top: 0%;
 }
 
-.logo-burger{
+.logo-burger {
   display: flex;
   justify-content: space-between;
 }
@@ -57,7 +57,7 @@
   color: #000;
 }
 
-.menu.visible{
+.menu.visible {
   display: block;
   flex-direction: column;
 }
@@ -113,7 +113,6 @@
 
 /*  FIN HEADER */
 /*  BODY */
-
 
 a {
   text-decoration: none;
@@ -683,7 +682,7 @@ form input {
   padding-bottom: 1px;
 }
 
-.producto:nth-child(3n+1) {
+.producto:nth-child(3n + 1) {
   background-color: var(--verde-oscuro);
   border-radius: 15%;
   margin-left: 20px;
@@ -693,7 +692,7 @@ form input {
   padding-top: 0px;
   padding-bottom: 0px; /* color 1 */
 }
-.producto:nth-child(3n+2) {
+.producto:nth-child(3n + 2) {
   background-color: var(--gris-verdoso);
   border-radius: 15%;
   margin-left: 20px;
@@ -704,7 +703,7 @@ form input {
   padding-bottom: 0px; /* color 2 */
 }
 
-.producto:nth-child(3n+3) {
+.producto:nth-child(3n + 3) {
   background-color: var(--marron);
   border-radius: 15%;
   margin-left: 20px;
@@ -1055,7 +1054,7 @@ form textarea {
   }
 
   .form-leyenda a:hover,
-  .nav a:hover{
+  .nav a:hover {
     font-weight: bolder;
   }
 
@@ -1094,7 +1093,6 @@ form textarea {
     display: flex;
     justify-content: space-between;
   }
-  
 
   .register-menu {
     display: flex;
@@ -1104,7 +1102,7 @@ form textarea {
     display: none;
   }
 
-  .logo-burger{
+  .logo-burger {
     display: flex;
     justify-content: space-around;
   }
@@ -1114,7 +1112,7 @@ form textarea {
     justify-content: space-around;
   }
 
-  .nav li{
+  .nav li {
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -1383,5 +1381,31 @@ form textarea {
   .contenedor-categoria {
     width: 90%;
     font-size: 16px;
+  }
+  .nombre-logo {
+    align-items: center;
+    display: flex;
+    position: relative;
+    left: 10px;
+  }
+  .contenedor-sidebar {
+    width: 20%;
+    display: inline-block;
+    background-color: var(--gris-verdoso);
+    min-width: 300px;
+    line-height: 18px;
+  }
+  .contenedor-sidebar a {
+    text-decoration: none;
+  }
+  .contenedor-sidebar .menu-sidebar {
+    width: 100%;
+  }
+  .contenedor-sidebar ul {
+    list-style: none;
+  }
+  .contenedor-sidebar .menu-sidebar li a {
+    display: block;
+    padding: 15px 20px;
   }
 }
